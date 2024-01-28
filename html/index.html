@@ -8,6 +8,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sofia&display=swap" rel="stylesheet">
+    <link rel="icon" href="images\favicon.ico" type="image/x-icon">
+
 </head>
 <body>
     <style>
@@ -28,7 +30,6 @@ a {
     border-bottom-left-radius: 110px 19px;
     border-bottom-right-radius: 120px 24px;
     display: flex;
-    position: relative;
     border: solid 3px #6e7491;
     padding: 1rem;
     max-width: 800px;
@@ -37,7 +38,6 @@ a {
     font-size: 17px;
     line-height: 28px;
     transform: rotate(-1deg);
-    box-shadow: 3px 15px 8px -10px rgba(0, 0, 0, 0.3);
     transition: all 0.13s ease-in;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -101,6 +101,16 @@ a {
   font-weight: 600;
 }
 
+@media screen and (max-width: 770px) {
+  .tl,
+  .tr,
+  .bl, 
+  .br {
+  display: none;
+  }
+  
+}
+
 /* --------- Images----------- */
 .profile-img {
   border-radius: 50%;
@@ -134,17 +144,17 @@ a {
 
     <div class="section-1">
         <div class="profile-container">
-            <img class="profile-img" src="images/Avatar.jpg" alt="Profile Photo That Looks Nothing Like Me">
+          <img src="images\Avatar.png" alt="Profile">
         </div>
     </div>
 
     <div class="section-2">
       <div class="container">
 
-        <span class="border tl">HTML</span>
-        <span class="border tr">CSS</span>
+        <span class="border tl">Html</span>
+        <span class="border tr">Css</span>
         <span class="border bl">Shopify &centerdot; Liquid</span>
-        <span class="border br">NodeJS &centerdot; NPM </span>
+        <span class="border br">NodeJS &centerdot; Npm </span>
       
         <h2 class="name">Jason Anthony O'Neill</h2>
         <p>Junior Web Developer</p>
@@ -154,6 +164,9 @@ a {
 
     <div class="section-3">
       <div class="container">
+
+        <span class="border bl">Udemy &centerdot; CodeAcademy &centerdot; Youtube &centerdot;  Online Courses</span>
+        <span class="border br">Scenary &centerdot; Photograpghy &centerdot; Dog Walking </span>
       
         <h2 class="name">Socials</h2>
         <div><a href="https://github.com/Mr-Jason-ONeill">Github</a></div>
@@ -164,7 +177,15 @@ a {
 
     <div class="section-4">
       <div class="projects">
+
+        <span class="border bl">Tutorials &centerdot; DIY</span>
+        <span class="border br">Baby Steps &centerdot; Success </span>
+
         <h2 class="project-names">Projects</h2>
+        <div class="project">Perelel Health</div>
+        <div class="project">Hello Bluebyrd</div>
+        <div class="project">Little Bridges</div>
+        <div class="project">Scratch</div>
     </div>
     </div>
 
