@@ -22,9 +22,15 @@ a {
   text-decoration: none;
 }
 
+.subheading {
+  color: hsl(357, 81%, 55%);
+  text-decoration: underline;
+}
+
 /* ---- Border ---- */
 
-.container {
+.container1,
+.container2 {
     border-top-left-radius: 37px 140px;
     border-top-right-radius: 23px 130px;
     border-bottom-left-radius: 110px 19px;
@@ -37,13 +43,28 @@ a {
     margin: 100px auto 0;
     font-size: 17px;
     line-height: 28px;
-    transform: rotate(-1deg);
-    transition: all 0.13s ease-in;
     flex-direction: column;
     flex-wrap: nowrap;
     align-content: center;
     justify-content: center;
     align-items: center;
+}
+
+.container1 {
+    border-top-left-radius: 37px 140px;
+    border-top-right-radius: 23px 130px;
+    border-bottom-left-radius: 110px 19px;
+    border-bottom-right-radius: 120px 24px;
+    transform: rotate(-1deg);
+}
+
+.container2 {
+  border-top-left-radius: 120px 24px ;
+  border-top-right-radius: 110px 19px;;
+  border-bottom-left-radius: 23px 130px ;
+  border-bottom-right-radius: 37px 140px ;
+  transform: rotate(0.1deg);
+
 }
 
 .projects {
@@ -110,6 +131,17 @@ a {
   }
 }
 
+.grade-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.grade {
+  z-index: -1;
+}
+
 /* --------- Images----------- */
 .profile-img {
   border-radius: 50%;
@@ -122,8 +154,6 @@ a {
 .section-2,
 .section-3,
 .section-4 {
-    margin-bottom: 5rem;
-    margin-top: 10rem;
     width: 100%;
 }
 
@@ -183,7 +213,7 @@ a {
     </div>
 
     <div class="section-2">
-      <div class="container">
+      <div class="container1">
 
         <span class="border tl">Html &centerdot; Css</span>
         <span class="border tr">Learning JavaScript</span>
@@ -191,13 +221,18 @@ a {
         <span class="border br">NodeJS &centerdot; Npm </span>
       
         <h2 class="name">Jason Anthony O'Neill</h2>
-        <p>Junior Web Developer</p>
+        <h3 class="subheading">Junior Web Developer</h3>
         <p>You don’t need to be great to start, but you need to start In order to be great. - Les Brown.</p>
       </div>
     </div>
 
+
+    <div class="grade-container">
+    <img class="grade" width="150" height="150" src="https://img.icons8.com/ios/50/grades.png" alt="grades"/>
+  </div>
+
     <div class="section-3">
-      <div class="container">
+      <div class="container2">
 
         <span class="border bl">Udemy &centerdot; CodeAcademy &centerdot; Youtube &centerdot;  Online Courses</span>
         <span class="border br">Scenary &centerdot; Photograpghy &centerdot; Dog Walking </span>
