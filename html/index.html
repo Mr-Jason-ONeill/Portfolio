@@ -108,7 +108,6 @@ a {
   .br {
   display: none;
   }
-  
 }
 
 /* --------- Images----------- */
@@ -139,6 +138,42 @@ a {
     align-items: center;
     flex-wrap: nowrap;
 }
+
+.slideshow-container {
+  position: relative;
+  max-width: 800px;
+  margin: auto;
+}
+
+.slide {
+  display: none;
+  position: absolute;
+  width: 100%;
+}
+
+.fade {
+  animation: fade 1.5s ease-in-out infinite;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.project-names {
+  border:dotted 5px hsla(0, 95%, 35%, 1);
+}
+
 
     </style>
 
@@ -182,10 +217,48 @@ a {
         <span class="border br">Baby Steps &centerdot; Success </span>
 
         <h2 class="project-names">Projects</h2>
-        <div class="project">Perelel Health</div>
-        <div class="project">Hello Bluebyrd</div>
-        <div class="project">Little Bridges</div>
-        <div class="project">Scratch</div>
+        <div class="project">
+          <h3 class="project-title">Perelel Health</h3>
+          <div class="slideshow-container">
+            <div class="slide fade">
+              <img src="images\perelelhealth1.png" alt="Perelel Bulletpoints">
+            </div>
+            <div class="slide fade">
+              <img src="images\perelelhealth2.png" alt="Perelel Recipe">
+            </div>
+            <div class="slide fade">
+              <img src="images\perelelhealth3.png" alt="Perelel Quotes">
+            </div>
+            <div class="slide fade">
+              <img src="images\perelelhealth4.png" alt="Perelel Image With Text">
+            </div>
+          </div>
+        </div>
+        <div class="project">
+          <h3 class="project-title">Hello Bluebyrd</h3>
+          <div class="slideshow-container">
+            <div class="slide fade">
+              <img src="images\hb1.png" alt="Bluebyrd Desktop Home">
+            </div>
+            <div class="slide fade">
+              <img src="images\hb2.png" alt="Bluebyrd Mobile Home">
+            </div>
+          </div>
+        </div>
+        <div class="project">
+          <h3 class="project-title">Little Bridges</h3>
+          <div class="slideshow-container">
+            <div class="slide fade">
+              <img src="images\littlebirds1.png" alt="Little Bridges Testimonials">
+            </div>
+            <div class="slide fade">
+              <img src="images\littlebirds2.png" alt="Little Bridges Bulletpoints with SVGs">
+            </div>
+            <div class="slide fade">
+              <img src="images\littlebirds3.png" alt="Little Bridges Section With Image and Text">
+            </div>
+          </div>
+        </div>
     </div>
     </div>
 
