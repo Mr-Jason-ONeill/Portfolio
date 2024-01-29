@@ -155,16 +155,23 @@ a:hover {
   font-weight: 600;
 }
 
-.bl {
+.bl,
+.bl2 {
   left: -50px;
   bottom: -71px;
   font-weight: 600;
 }
 
-.br {
+.br,
+.br2 {
   right: -50px;
   bottom: -63px;
   font-weight: 600;
+}
+
+.bl2,
+.br2 {
+    padding-bottom: 1rem;
 }
 
 @media screen and (max-width: 770px) {
