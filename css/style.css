@@ -1,4 +1,5 @@
 body {
+    margin: 0;
     font-family: 'sofia';
     background-image: linear-gradient(90deg, transparent 0%, transparent 10%, #DB676C 10%, #DB676C calc(10% + 2px), transparent calc(10% + 2px), transparent 100%), linear-gradient(180deg, white 10%, transparent 10%), repeating-linear-gradient(180deg, #91C1E1 0px, #91C1E1 2px, transparent 2px, transparent 32px), linear-gradient(white,white)
 }
@@ -7,12 +8,22 @@ a {
   text-decoration: none;
 }
 
+a:hover {
+    text-decoration: line-through solid 2px hsl(357, 81%, 55%);
+    transition: ease-out 0.7s;
+}
+
 .subheading {
   color: hsl(357, 81%, 55%);
   text-decoration: underline;
 }
 
 /* ---- Containers & Wrappers ---- */
+
+.section-1 {
+    width: 100%;
+    background-image: linear-gradient(164deg, rgba(49,49,49,0.15) 0%,transparent 44%),linear-gradient(97deg, rgba(49,49,49,0.15) 0%,transparent 40%),linear-gradient(265deg, rgba(49,49,49,0.15) 0%,transparent 30%),linear-gradient(316deg, rgba(49,49,49,0.15) 0%,transparent 78%),repeating-linear-gradient(38deg, rgba(140,140,140,0.1) 0px,transparent 3px),repeating-linear-gradient(100deg, rgba(140,140,140,0.1) 0px,transparent 3px),linear-gradient(90deg, rgb(241,194,117),rgb(241,194,117));
+}
 
 .container1,
 .container2 {
@@ -53,6 +64,7 @@ a {
 }
 
 .projects {
+    width: 100%;
     padding: 4rem 8rem;
     display: flex;
     border: 3px solid #5c46f1;
@@ -82,8 +94,7 @@ a {
     width: 100%;
 }
 
-.profile-container,
-.info-container {
+.profile-container {
     display: flex;
     padding-top: 1rem;
     flex-direction: column;
@@ -91,12 +102,29 @@ a {
     justify-content: center;
     align-items: center;
     flex-wrap: nowrap;
+    padding-bottom: 1rem;
 }
 
-.slideshow-container {
-  position: relative;
-  max-width: 800px;
-  margin: auto;
+.screenshot-container {
+    display: flex;
+    gap: 1rem;
+    position: relative;
+    max-width: 800px;
+    margin: auto;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.slide {
+    display: flex;
+    width: 500px;
+    height: auto;
+    max-width: 800px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 /* ------ Borders ------ */
@@ -156,8 +184,9 @@ a {
 }
 
 /* --------- Images----------- */
-.profile-img {
+.profile-image {
   border-radius: 50%;
+  border:solid 5px rgb(32, 4, 174);
 }
 
 .darrow {
@@ -169,31 +198,30 @@ display: flex;
     flex-wrap: wrap;
 }
 
-/*-------- Slideshow ------------ */
 
-.slide {
-  display: none;
-  position: absolute;
-  width: 100%;
+.project-title {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
 }
 
-.fade {
-  animation: fade 1.5s ease-in-out infinite;
-}
+/*-------- Screenshots ------------ */
 
-@keyframes fade {
-  0% {
-    opacity: 0;
-  }
-  25% {
-    opacity: 1;
-  }
-  75% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
+ .slide {
+    display: flex;
+    max-width: 800px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid #333333;
+    font-size: 2.5rem;
+    border-radius: 2% 6% 5% 4% / 1% 1% 2% 4%;
+    text-transform: uppercase;
+    letter-spacing: 0.3ch;
+    position: relative;
 }
 
 
