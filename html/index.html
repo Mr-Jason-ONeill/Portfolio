@@ -13,7 +13,7 @@
 </head>
 <body>
   <style>
-        body {
+     body {
     font-family: 'sofia';
     background-image: linear-gradient(90deg, transparent 0%, transparent 10%, #DB676C 10%, #DB676C calc(10% + 2px), transparent calc(10% + 2px), transparent 100%), linear-gradient(180deg, white 10%, transparent 10%), repeating-linear-gradient(180deg, #91C1E1 0px, #91C1E1 2px, transparent 2px, transparent 32px), linear-gradient(white,white)
 }
@@ -27,7 +27,7 @@ a {
   text-decoration: underline;
 }
 
-/* ---- Border ---- */
+/* ---- Containers & Wrappers ---- */
 
 .container1,
 .container2 {
@@ -60,7 +60,7 @@ a {
 
 .container2 {
   border-top-left-radius: 120px 24px ;
-  border-top-right-radius: 110px 19px;;
+  border-top-right-radius: 110px 19px;
   border-bottom-left-radius: 23px 130px ;
   border-bottom-right-radius: 37px 140px ;
   transform: rotate(0.1deg);
@@ -84,6 +84,37 @@ a {
     align-items: center;
 }
 
+.grade-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.section-2,
+.section-3,
+.section-4 {
+    width: 100%;
+}
+
+.profile-container,
+.info-container {
+    display: flex;
+    padding-top: 1rem;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.slideshow-container {
+  position: relative;
+  max-width: 800px;
+  margin: auto;
+}
+
+/* ------ Borders ------ */
 
 .border {
   position: absolute;
@@ -131,15 +162,12 @@ a {
   }
 }
 
-.grade-container {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 .grade {
   z-index: -1;
+}
+
+.project-names {
+  border:dotted 5px hsla(0, 95%, 35%, 1);
 }
 
 /* --------- Images----------- */
@@ -147,32 +175,16 @@ a {
   border-radius: 50%;
 }
 
-
-
-/*-------------------- */
-
-.section-2,
-.section-3,
-.section-4 {
-    width: 100%;
-}
-
-.profile-container,
-.info-container {
-    display: flex;
-    padding-top: 1rem;
-    flex-direction: column;
-    align-content: center;
-    justify-content: center;
+.darrow {
+display: flex;
     align-items: center;
-    flex-wrap: nowrap;
+    justify-content: center;
+    align-content: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
-.slideshow-container {
-  position: relative;
-  max-width: 800px;
-  margin: auto;
-}
+/*-------- Slideshow ------------ */
 
 .slide {
   display: none;
@@ -198,12 +210,6 @@ a {
     opacity: 0;
   }
 }
-
-.project-names {
-  border:dotted 5px hsla(0, 95%, 35%, 1);
-}
-
-
     </style>
 
     <div class="section-1">
@@ -254,23 +260,25 @@ a {
         <div class="project">
           <h3 class="project-title">Perelel Health</h3>
           <div class="slideshow-container">
+            <div class="darrow">&darr;</div> 
             <div class="slide fade">
-              <img src="images\perelelhealth1.png" alt="Perelel Bulletpoints">
+              <img src="images\perelelhealth1.png" alt="Perelel Bulletpoints">1
             </div>
             <div class="slide fade">
-              <img src="images\perelelhealth2.png" alt="Perelel Recipe">
+              <img src="images\perelelhealth2.png" alt="Perelel Recipe">2
             </div>
             <div class="slide fade">
-              <img src="images\perelelhealth3.png" alt="Perelel Quotes">
+              <img src="images\perelelhealth3.png" alt="Perelel Quotes">3
             </div>
             <div class="slide fade">
-              <img src="images\perelelhealth4.png" alt="Perelel Image With Text">
+              <img src="images\perelelhealth4.png" alt="Perelel Image With Text">4
             </div>
           </div>
         </div>
         <div class="project">
           <h3 class="project-title">Hello Bluebyrd</h3>
           <div class="slideshow-container">
+            <div class="darrow">&darr;</div> 
             <div class="slide fade">
               <img src="images\hb1.png" alt="Bluebyrd Desktop Home">
             </div>
@@ -282,6 +290,7 @@ a {
         <div class="project">
           <h3 class="project-title">Little Bridges</h3>
           <div class="slideshow-container">
+            <div class="darrow">&darr;</div> 
             <div class="slide fade">
               <img src="images\littlebirds1.png" alt="Little Bridges Testimonials">
             </div>

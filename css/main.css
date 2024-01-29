@@ -160,7 +160,14 @@ a {
   border-radius: 50%;
 }
 
-
+.darrow {
+display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
 
 /*-------- Slideshow ------------ */
 
