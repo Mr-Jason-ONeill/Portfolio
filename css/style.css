@@ -18,6 +18,12 @@ a:hover {
   text-decoration: underline;
 }
 
+.unicode-dot {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    color: #5c46f1;
+}
+
 /* ---- Containers & Wrappers ---- */
 
 .section-1 {
