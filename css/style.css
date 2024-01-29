@@ -133,6 +133,11 @@ a:hover {
     align-items: center;
 }
 
+.slide:hover {
+    transform: scale(2.5);
+    z-index: 5;
+}
+
 /* ------ Borders ------ */
 
 .border {
