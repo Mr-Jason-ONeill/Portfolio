@@ -1,0 +1,199 @@
+body {
+    font-family: 'sofia';
+    background-image: linear-gradient(90deg, transparent 0%, transparent 10%, #DB676C 10%, #DB676C calc(10% + 2px), transparent calc(10% + 2px), transparent 100%), linear-gradient(180deg, white 10%, transparent 10%), repeating-linear-gradient(180deg, #91C1E1 0px, #91C1E1 2px, transparent 2px, transparent 32px), linear-gradient(white,white)
+}
+
+a {
+  text-decoration: none;
+}
+
+.subheading {
+  color: hsl(357, 81%, 55%);
+  text-decoration: underline;
+}
+
+/* ---- Containers & Wrappers ---- */
+
+.container1,
+.container2 {
+    border-top-left-radius: 37px 140px;
+    border-top-right-radius: 23px 130px;
+    border-bottom-left-radius: 110px 19px;
+    border-bottom-right-radius: 120px 24px;
+    display: flex;
+    border: solid 3px #6e7491;
+    padding: 1rem;
+    max-width: 800px;
+    width: 70%;
+    margin: 2rem auto 0;
+    font-size: 17px;
+    line-height: 28px;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.container1 {
+    border-top-left-radius: 37px 140px;
+    border-top-right-radius: 23px 130px;
+    border-bottom-left-radius: 110px 19px;
+    border-bottom-right-radius: 120px 24px;
+    transform: rotate(-1deg);
+}
+
+.container2 {
+  border-top-left-radius: 120px 24px ;
+  border-top-right-radius: 110px 19px;
+  border-bottom-left-radius: 23px 130px ;
+  border-bottom-right-radius: 37px 140px ;
+  transform: rotate(0.1deg);
+
+}
+
+.projects {
+    padding: 4rem 8rem;
+    display: flex;
+    border: 3px solid #5c46f1;
+    font-size: 1rem;
+    border-radius: 2% 6% 5% 4% / 1% 1% 2% 4%;
+    background: transparent;
+    transform: rotate(1deg);
+    margin: 6rem auto 0;
+    max-width: 500px;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.grade-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.section-2,
+.section-3,
+.section-4 {
+    width: 100%;
+}
+
+.profile-container,
+.info-container {
+    display: flex;
+    padding-top: 1rem;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.slideshow-container {
+  position: relative;
+  max-width: 800px;
+  margin: auto;
+}
+
+/* ------ Borders ------ */
+
+.border {
+  position: absolute;
+  transition: all 0.13s ease-in;
+}
+
+.border:before,
+.border:after {
+  color: #515d9c;
+  font-size: 15px;
+  position: absolute;
+}
+
+.tl {
+  position: absolute;
+  left: -50px;
+  top: -63px;
+  font-weight: 600;
+}
+
+.tr {
+  right: -50px;
+  top: -63px;
+  font-weight: 600;
+}
+
+.bl {
+  left: -50px;
+  bottom: -71px;
+  font-weight: 600;
+}
+
+.br {
+  right: -50px;
+  bottom: -63px;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 770px) {
+  .tl,
+  .tr,
+  .bl, 
+  .br {
+  display: none;
+  }
+}
+
+.grade {
+  z-index: -1;
+}
+
+.project-names {
+  border:dotted 5px hsla(0, 95%, 35%, 1);
+}
+
+/* --------- Images----------- */
+.profile-img {
+  border-radius: 50%;
+}
+
+.darrow {
+display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+/*-------- Slideshow ------------ */
+
+.slide {
+  display: none;
+  position: absolute;
+  width: 100%;
+}
+
+.fade {
+  animation: fade 1.5s ease-in-out infinite;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+
