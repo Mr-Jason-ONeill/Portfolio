@@ -59,7 +59,7 @@ a:hover {
   border-top-right-radius: 110px 19px;
   border-bottom-left-radius: 23px 130px ;
   border-bottom-right-radius: 37px 140px ;
-  transform: rotate(0.1deg);
+  transform: rotate(1deg);
 
 }
 
@@ -71,7 +71,7 @@ a:hover {
     font-size: 1rem;
     border-radius: 2% 6% 5% 4% / 1% 1% 2% 4%;
     background: transparent;
-    transform: rotate(1deg);
+    transform: rotate(0.1deg);
     margin: 6rem auto 0;
     max-width: 500px;
     flex-direction: column;
@@ -142,6 +142,7 @@ a:hover {
 }
 
 .tl {
+  padding-top: 1rem;
   position: absolute;
   left: -50px;
   top: -63px;
