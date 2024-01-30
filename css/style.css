@@ -134,8 +134,10 @@ a:hover {
 }
 
 .slide:hover {
-    transform: scale(2.5);
+    transform: scale(2);
     z-index: 5;
+    transition: ease 0.3s;
+    cursor: zoom-in;
 }
 
 /* ------ Borders ------ */
