@@ -201,15 +201,6 @@ a:hover {
     padding-bottom: 1rem;
 }
 
-@media screen and (max-width: 770px) {
-  .tl,
-  .tr,
-  .bl, 
-  .br {
-  display: none;
-  }
-}
-
 .grade {
   z-index: -1;
 }
@@ -259,4 +250,52 @@ display: flex;
     position: relative;
 }
 
+
+@media screen and (min-width: 300px) and (max-width: 770px) {
+  .profile-image {
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .tl,
+  .tr,
+  .bl, 
+  .br,
+  .br2,
+  .bl2 {
+  display: none;
+  }
+
+  .grade-container {
+    display: none;
+  }
+
+  .container2 {
+    transform: translateY(-4rem);
+  }
+
+  .section-2 {
+    display: flex;
+  }
+
+  .projects {
+    margin: 0;
+    width: auto;
+    border: none;
+  }
+  
+  .screenshot-container {
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+
+  .slide {
+    width: 250px;
+  }
+
+}
 
