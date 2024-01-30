@@ -207,7 +207,7 @@ a:hover {
 /* --------- Images----------- */
 .profile-image {
   border-radius: 50%;
-  border:solid 5px rgb(32, 4, 174);
+  border: solid 5px rgb(4 174 165);
 }
 
 .darrow {
