@@ -28,7 +28,9 @@ a:hover {
 
 .section-1 {
     width: 100%;
-    background-image: linear-gradient(164deg, rgba(49,49,49,0.15) 0%,transparent 44%),linear-gradient(97deg, rgba(49,49,49,0.15) 0%,transparent 40%),linear-gradient(265deg, rgba(49,49,49,0.15) 0%,transparent 30%),linear-gradient(316deg, rgba(49,49,49,0.15) 0%,transparent 78%),repeating-linear-gradient(38deg, rgba(140,140,140,0.1) 0px,transparent 3px),repeating-linear-gradient(100deg, rgba(140,140,140,0.1) 0px,transparent 3px),linear-gradient(90deg, rgb(241,194,117),rgb(241,194,117));
+    background-image: repeating-linear-gradient(67.5deg, hsla(127,0%,46%,0.2) 0px, hsla(127,0%,46%,0.2) 0px,transparent 0px, transparent 1px,hsla(127,0%,46%,0.2) 1px, hsla(127,0%,46%,0.2) 3px,transparent 3px, transparent 4px,hsla(127,0%,46%,0.2) 4px, hsla(127,0%,46%,0.2) 6px),repeating-linear-gradient(0deg, hsla(127,0%,46%,0.2) 0px, hsla(127,0%,46%,0.2) 0px,transparent 0px, transparent 1px,hsla(127,0%,46%,0.2) 1px, hsla(127,0%,46%,0.2) 3px,transparent 3px, transparent 4px,hsla(127,0%,46%,0.2) 4px, hsla(127,0%,46%,0.2) 6px),linear-gradient(90deg, rgb(23,23,23),rgb(23,23,23));
+
+    border-bottom: black solid 3px;
 }
 
 .container1,
