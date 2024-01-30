@@ -13,6 +13,17 @@ a:hover {
     transition: ease-out 0.7s;
 }
 
+.grade-comment {
+  padding-bottom: 10px;
+  color: white;
+}
+
+.grade-comment:hover {
+  padding-bottom: 10px;
+  color: black;
+  cursor: pointer;
+}
+
 .subheading {
   color: hsl(357, 81%, 55%);
   text-decoration: underline;
@@ -59,7 +70,7 @@ a:hover {
     border-top-right-radius: 23px 130px;
     border-bottom-left-radius: 110px 19px;
     border-bottom-right-radius: 120px 24px;
-    transform: rotate(-1deg);
+    transform: rotate(-0.1deg);
 }
 
 .container2 {
@@ -67,7 +78,7 @@ a:hover {
   border-top-right-radius: 110px 19px;
   border-bottom-left-radius: 23px 130px ;
   border-bottom-right-radius: 37px 140px ;
-  transform: rotate(1deg);
+  transform: rotate(0.1deg);
 
 }
 
