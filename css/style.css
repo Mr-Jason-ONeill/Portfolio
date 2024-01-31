@@ -4,6 +4,20 @@ body {
     background-image: linear-gradient(90deg, transparent 0%, transparent 10%, #DB676C 10%, #DB676C calc(10% + 2px), transparent calc(10% + 2px), transparent 100%), linear-gradient(180deg, white 10%, transparent 10%), repeating-linear-gradient(180deg, #91C1E1 0px, #91C1E1 2px, transparent 2px, transparent 32px), linear-gradient(white,white)
 }
 
+::-webkit-scrollbar {
+            width: 20px;
+}
+        
+::-webkit-scrollbar-track {
+            background-color: transparent;
+}
+        
+::-webkit-scrollbar-thumb {
+            background-image: url('https://i.ibb.co/1RHr40z/248599.png'); 
+            background-repeat: no-repeat, no-repeat;
+            background-size: 20px;
+}
+
 a {
   text-decoration: none;
 }
