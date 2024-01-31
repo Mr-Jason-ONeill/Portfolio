@@ -22,7 +22,7 @@ a:hover {
   padding-bottom: 10px;
   padding-left: 2px;
   color:  hsl(357, 81%, 55%);
-  cursor: pointer;
+  cursor: copy;
 }
 
 .subheading {
