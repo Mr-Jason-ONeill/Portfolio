@@ -4,6 +4,19 @@ body {
     background-image: linear-gradient(90deg, transparent 0%, transparent 10%, #DB676C 10%, #DB676C calc(10% + 2px), transparent calc(10% + 2px), transparent 100%), linear-gradient(180deg, white 10%, transparent 10%), repeating-linear-gradient(180deg, #91C1E1 0px, #91C1E1 2px, transparent 2px, transparent 32px), linear-gradient(white,white)
 }
 
+::-webkit-scrollbar {
+            width: 6px;
+}
+        
+::-webkit-scrollbar-track {
+      background-image: repeating-linear-gradient(67.5deg, hsla(127,0%,46%,0.2) 0px, hsla(127,0%,46%,0.2) 0px,transparent 0px, transparent 1px,hsla(127,0%,46%,0.2) 1px, hsla(127,0%,46%,0.2) 3px,transparent 3px, transparent 4px,hsla(127,0%,46%,0.2) 4px, hsla(127,0%,46%,0.2) 6px),repeating-linear-gradient(0deg, hsla(127,0%,46%,0.2) 0px, hsla(127,0%,46%,0.2) 0px,transparent 0px, transparent 1px,hsla(127,0%,46%,0.2) 1px, hsla(127,0%,46%,0.2) 3px,transparent 3px, transparent 4px,hsla(127,0%,46%,0.2) 4px, hsla(127,0%,46%,0.2) 6px),linear-gradient(90deg, rgb(23,23,23),rgb(23,23,23));
+}
+        
+::-webkit-scrollbar-thumb {
+  background-image: repeating-linear-gradient(45deg, hsla(64,83%,54%,0.05) 0px, hsla(64,83%,54%,0.05) 1px,transparent 1px, transparent 11px,hsla(64,83%,54%,0.05) 11px, hsla(64,83%,54%,0.05) 12px,transparent 12px, transparent 32px),repeating-linear-gradient(90deg, hsla(64,83%,54%,0.05) 0px, hsla(64,83%,54%,0.05) 1px,transparent 1px, transparent 11px,hsla(64,83%,54%,0.05) 11px, hsla(64,83%,54%,0.05) 12px,transparent 12px, transparent 32px),repeating-linear-gradient(0deg, hsla(64,83%,54%,0.05) 0px, hsla(64,83%,54%,0.05) 1px,transparent 1px, transparent 11px,hsla(64,83%,54%,0.05) 11px, hsla(64,83%,54%,0.05) 12px,transparent 12px, transparent 32px),repeating-linear-gradient(135deg, hsla(64,83%,54%,0.05) 0px, hsla(64,83%,54%,0.05) 1px,transparent 1px, transparent 11px,hsla(64,83%,54%,0.05) 11px, hsla(64,83%,54%,0.05) 12px,transparent 12px, transparent 32px),linear-gradient(90deg, rgb(65,38,255),rgb(169,77,249));
+  border-radius: 510px;
+}
+
 a {
   text-decoration: none;
 }
@@ -22,7 +35,7 @@ a:hover {
   padding-bottom: 10px;
   padding-left: 2px;
   color:  hsl(357, 81%, 55%);
-  cursor: pointer;
+  cursor: copy;
 }
 
 .subheading {
@@ -234,6 +247,7 @@ display: flex;
     justify-content: center;
 }
 
+
 /*-------- Screenshots ------------ */
 
  .slide {
@@ -251,7 +265,7 @@ display: flex;
 }
 
 
-@media screen and (min-width: 300px) and (max-width: 770px) {
+@media screen and (min-width: 300px) and (max-width: 865px) {
   .profile-image {
     width: 150px;
     display: flex;
