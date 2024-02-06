@@ -213,7 +213,7 @@ blockquote {
 .project-image-container {
     display: flex;
     flex: 1;
-    width: calc(100% - 300px);
+    width: auto;
     flex-wrap: wrap;
 }
 
@@ -232,6 +232,16 @@ blockquote {
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+
+  @media screen and (max-width: 650px) {
+    .project-image-container {
+        width: auto;
+    }
+
+    .image-container {
+      background-color: transparent;
+    }
   }
 
   .image-container img {
