@@ -6,89 +6,286 @@
     <title>Jason O'Neill's Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Sofia&display=swap" rel="stylesheet">
-    <link rel="icon" href="./images/favicon.ico" type="image/icon">
+    <link href="https://fonts.googleapis.com/css2?family=Sofia+Sans+Condensed:ital,wght@0,1;0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,1;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="photoswipe/dist/photoswipe.css">
 
 </head>
 <body>
+  <!-- Sections-container is for all sections on page -->
+  <div class="sections-container">
+    <div class="sections-wrapper">
+      <!-- Section-1 focuses on Profile image, name and title -->
+      <div class="section-1">
+        <div class="section-1-wrapper">
+          <div class="profile-image-container">
+            <img class="profile-image" src="images\Avatar.png" alt="Cartoon Image of Universe Orbiting Around Me" width="300px" >
+          </div>
+          <div class="profile-name">
+            <p class="name"> Jason Anthony O'Neill</p>
+          </div>
 
-    <div class="section-1">
-        <div class="profile-container">
-          <img class="profile-image" src="./images/Avatar.png" alt="Profile Image That Looks Better Than Me" width="300px">
+          <div class="profile-title">
+            <h1> Shopify Theme Developer</h1>
+          </div>
+
+          <div class="profile-quote">
+            <svg class="quote-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+              <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+              <path d="M0 216C0 149.7 53.7 96 120 96h8c17.7 0 32 14.3 32 32s-14.3 32-32 32h-8c-30.9 0-56 25.1-56 56v8h64c35.3 0 64 28.7 64 64v64c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V320 288 216zm256 0c0-66.3 53.7-120 120-120h8c17.7 0 32 14.3 32 32s-14.3 32-32 32h-8c-30.9 0-56 25.1-56 56v8h64c35.3 0 64 28.7 64 64v64c0 35.3-28.7 64-64 64H320c-35.3 0-64-28.7-64-64V320 288 216z"/></svg>
+              <blockquote class="quote">
+                You do not need to be great in order to start, but you do have to start in order to be great.
+              </blockquote>
+              
+              <svg class="quote-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                <path d="M448 296c0 66.3-53.7 120-120 120h-8c-17.7 0-32-14.3-32-32s14.3-32 32-32h8c30.9 0 56-25.1 56-56v-8H320c-35.3 0-64-28.7-64-64V160c0-35.3 28.7-64 64-64h64c35.3 0 64 28.7 64 64v32 32 72zm-256 0c0 66.3-53.7 120-120 120H64c-17.7 0-32-14.3-32-32s14.3-32 32-32h8c30.9 0 56-25.1 56-56v-8H64c-35.3 0-64-28.7-64-64V160c0-35.3 28.7-64 64-64h64c35.3 0 64 28.7 64 64v32 32 72z"/></svg>
+                <cite>~ Les Brown</cite>
+          </div>
+          <div class="profile-socials">
+            <div class="social-icon">
+              <a href="https://github.com/Mr-Jason-ONeill">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
+                <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                <path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+                </a>
+              </div>
+            <div class="social-icon">
+              <a href="https://www.instagram.com/19jasoneill91/">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                <path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
+                </a>
+              </div>
+            <div class="social-icon">
+              <a href="www.linkedin.com/in/mrjasononeill">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                <path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>
+                </a>
+              </div>
+
+          </div>
         </div>
-    </div>
-
-    <div class="section-2">
-      <div class="container1">
-
-        <span class="border bl">Shopify <span class="unicode-dot">&#9640;</span>Liquid</span>
-        <span class="border br">NodeJS<span class="unicode-dot">&#9640;</span> Npm </span>
-      
-        <h2 class="name">Jason Anthony O'Neill</h2>
-        <h3 class="subheading">Junior Web Developer</h3>
-        <p class="bio-text">You don’t need to be great to start, but you need to start In order to be great. - Les Brown.</p>
       </div>
+          <!-- Section-2 focuses on "About Me" -->
+          <div class="section-2">
+            <div class="section-2-wrapper">
+              <div class="about-me">
+                <p>
+                  Based in Resolven, South Wales,  United Kingdom. Jason is a passionate and innovative Junior Web Developer dedicated to crafting engaging, user-friendly digital experiences. With a foundation in "The Complete 2024 Web Development Bootcamp ~ Dr. Angela Yu", Jason has honed a solid skill set in HTML, CSS, Shopify and JavaScript, alongside a keen interest in emerging technologies. 
+                </p>
+                <br>
+                <p>
+                  Since embarking on his web development journey in 2022, Jason has contributed to a variety of projects. Each project has been a stepping stone, enhancing his coding skills and understanding of user-centric design principles.
+                </p>
+                <br>
+                <p>
+                  Jason's portfolio showcases a blend of creativity and technical prowess, featuring projects that solve real-world problems with intuitive interfaces and efficient code. Whether working solo or as part of a team, Jason brings a detail-oriented approach and a relentless drive to exceed expectations.
+                </p>
+                <br>
+                <p>
+                  Eager to grow and always ready for a challenge, Jason is on the lookout for opportunities to collaborate on projects that push the boundaries of what's possible on the web. He believes in continuous learning and strives to stay at the forefront of web development trends and best practices.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Section-3 focuses on Projects -->
+          <div class="section-3">
+            <div class="section-3-wrapper">
+              <h2 class="project-section-title">Projects</h2>
+              <!-- Project 1-->
+              <div class="projects">
+                <div class="project-writing">
+                <div class="project-title">
+                  <h3> Perelel Health </h3>
+                </div>
+                <div class="project-info">
+                  <p>
+                    After being inspired by Perelel Health's elegant web design, Jason sought to enhance his CSS skills by replicating their aesthetic on a Shopify store. Drawing inspiration from Perelel's seamless layout and sleek styling, he meticulously crafted a replica that embodies their sophisticated design principles. By implementing refined CSS techniques and attention to detail, he aimed to capture the essence of Perelel Health's website while adding his own touch of creativity. The result is a visually stunning Shopify store that not only pays homage to Perelel's design but also showcases his dedication to mastering CSS and creating compelling web experiences.
+                  </p>
+                  <ul>
+                    <li>Shopify</li>
+                    <li>Liquid</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                  </ul>
+                </div>
+                </div>
+
+                
+              <div class="project-image-container">
+                <div class="project-image-wrapper">
+                  <div class="image-container">
+                    <a href="images\perelelhealth_bulletpoint.png"
+                    data-pswp-width="1200" 
+                    data-pswp-height="600">
+                    <img class="screenshot" src="images\perelelhealth_bulletpoint.png" alt="Screenshot of a bulletpoint section">
+                    </a>
+                  </div>
+                  <div class="image-container">
+                    <a href="images\perelelhealth_imagecard.png"
+                    data-pswp-width="1200" 
+                    data-pswp-height="600">
+                    <img class="screenshot" src="images\perelelhealth_imagecard.png" alt="Screenshot of a section that allowed client to add or remove text with an image">
+                    </a>
+                  </div>
+                  <div class="image-container">
+                    <a href="images\perelelhealth_compare.png"
+                    data-pswp-width="1200" 
+                    data-pswp-height="600">
+                    <img class="screenshot" src="images\perelelhealth_compare.png" alt="Screenshot of product comparison section">
+                    </a>
+                  </div>
+                  <div class="image-container">
+                    <a href="images\perelelhealth_recipe.png"
+                    data-pswp-width="1200" 
+                    data-pswp-height="600">
+                    <img class="screenshot" src="images\perelelhealth_recipe.png" alt="screenshot of recipe section containing blocks">
+                    </a>
+                  </div>
+              </div>
+            </div>
+                </div>
+
+              <!-- End of Project 1 -->
+
+              <!-- Project 2 -->
+              <div class="projects">
+                <div class="project-writing">
+                <div class="project-title">
+                  <h3> Hellobluebyrd</h3>
+                </div>
+                <div class="project-info">
+                  <p>
+                    Inspired by the captivating design of HelloBlueByrd, Jason embarked on a mission to elevate my CSS proficiency by focusing on their landing page. With meticulous attention to detail, he meticulously crafted a responsive replica that mirrors HelloBlueByrd's inviting layout and seamless user experience. By honing in on the intricacies of responsive design techniques, he ensured that every element adapts flawlessly to various screen sizes, maintaining the page's aesthetic appeal across devices. Through this project, he not only paid homage to HelloBlueByrd's design ethos but also honed his skills in creating dynamic and engaging web experiences that resonate with modern audiences.
+                  </p>
+                  <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                  </ul>
+                </div>
+                </div>
+
+                <div class="project-image-container">
+                  <div class="project-image-wrapper">
+                    <div class="image-container">
+                      <a href="images\hellobluebyrd_password_desktop.png"
+                      data-pswp-width="1200" 
+                      data-pswp-height="600">
+                      <img class="screenshot" src="images\hellobluebyrd_password_desktop.png" alt="Screenshot of desktop landing page">
+                      </a>
+                    </div>
+                    <div class="image-container">
+                      <a href="images\hellobluebyrd_password(iPhone SE).png"
+                      data-pswp-width="1200" 
+                      data-pswp-height="600">
+                      <img class="screenshot" src="images\hellobluebyrd_password(iPhone SE).png" alt="Screenshot of mobile landing page">
+                      </a>
+                    </div>
+                </div>
+              </div>
+              </div>
+
+              <!-- End of Project 2-->
+
+              <!-- Project 3-->
+              <div class="projects">
+                <div class="project-writing">
+                <div class="project-title">
+                  <h3> Little Bridges</h3>
+                </div>
+                <div class="project-info">
+                  <p>
+                    Inspired by the captivating design of Little Bridges, he dedicated himself to refining his CSS skills by replicating their entire website. From the homepage to the deepest corners of the site, he meticulously recreated Little Bridges' charming aesthetic, ensuring each element was not only visually appealing but also responsive across all devices. Drawing from their whimsical layout and playful color palette, he delved into the intricacies of CSS to emulate their unique style with precision and attention to detail. Through this project, he not only paid homage to Little Bridges' creative vision but also expanded his proficiency in CSS to create cohesive and engaging web experiences that capture the essence of their brand.
+                  <ul>
+                    <li>Shopify</li>
+                    <li>Liquid</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                  </ul>
+                </div>
+                </div>
+
+                <div class="project-image-container">
+                  <div class="project-image-wrapper">
+                    <div class="image-container">
+                      <a href="images\littlebirds_hero.png"
+                      data-pswp-width="1200" 
+                      data-pswp-height="600">
+                        <img class="screenshot" src="images\littlebirds_hero.png" alt="Screenshot of hero section">
+                      </a>
+                    </div>
+                    <div class="image-container">
+                      <a href="images\littlebirds_introsection.png"
+                      data-pswp-width="1200" 
+                      data-pswp-height="600">
+                      <img class="screenshot" src="images\littlebirds_introsection.png" alt="Screenshot of section of Introduction of company">
+                      </a>
+                    </div>
+                    <div class="image-container">
+                      <a href="images\littlebirds_plussection.png"
+                      data-pswp-width="1200" 
+                      data-pswp-height="600">
+                      <img class="screenshot" src="images\littlebirds_plussection.png" alt="Screenshot of bulletpoint section containing svg's as bulletpoints">
+                      </a>
+                    </div>
+                    <div class="image-container">
+                      <a href="images\littlebirds_testimonial.png"
+                      data-pswp-width="1200" 
+                      data-pswp-height="600">
+                      <img class="screenshot" src="images\littlebirds_testimonial.png" alt="Screenshot of testimonials section">
+                      </a>
+                    </div>
+                </div>
+              </div>
+              </div>
+              <!-- End of Project 3-->
+              </div>
+            </div>
+
+            <!-- End of Section 3 -->
+
+              <!-- Footer -->
+              <footer>
+                <div class="footer-container">
+                  <div class="footer-wrapper">
+                    <div class="contact-me">
+                      <p class="footer-text">Contact Me</p>
+                    </div>
+                    <div class="footer-socials">
+                      <div class="social-icon">
+                        <a href="https://github.com/Mr-Jason-ONeill">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                          <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                          <path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>
+                          </a>
+                        </div>
+                      <div class="social-icon">
+                        <a href="https://www.instagram.com/19jasoneill91/">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                          <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                          <path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
+                          </a>
+                        </div>
+                      <div class="social-icon">
+                        <a href="www.linkedin.com/in/mrjasononeill">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
+                          <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                          <path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+                          </a>
+                        </div>
+                    </div>
+
+                  </div>
+                </div>
+              </footer>
+
     </div>
-
-
-    <div class="grade-container">
-    <img class="grade" width="100" height="100" src="https://img.icons8.com/ios/50/grades.png" alt="grades"/>
-    <p class="grade-comment">I feel like this should have been C++</p>
   </div>
-
-    <div class="section-3">
-      <div class="container2">
-
-        <span class="border tl">Html<span class="unicode-dot">&#9640;</span>Css</span>
-        <span class="border tr">Learning JavaScript</span>
-        <span class="border bl">Udemy<span class="unicode-dot">&#9640;</span>CodeAcademy <span class="unicode-dot">&#9640;</span>Youtube <span class="unicode-dot">&#9640;</span>Online Courses</span>
-        <span class="border br">Baby Steps<span class="unicode-dot">&#9640;</span>Success </span>
-      
-        <h2 class="name">Socials</h2>
-        <div class="social">
-          <a href="https://github.com/Mr-Jason-ONeill">Github</a></div>
-        <div class="social">
-         <a href="https://www.linkedin.com/in/mrjasononeill">LinkedIn</a></div>
-        <div class="social">
-          <a href="https://www.instagram.com/19jasoneill91/">Instagram</a></div>
-      </div>
-    </div>
-
-    <div class="section-4">
-      <div class="projects">
-
-        <h2 class="project-names">Projects</h2>
-        <div class="project">
-          <h3 class="project-title">Perelel Health</h3>
-          <div class="screenshot-container">
-            <img class="darrow" src="./images/down.png" alt="Arrow Pointing Down">
-              <img class="slide" src="./images/perelelhealth1.png" alt="Perelel Bulletpoints">
-              <img class="slide" src="./images/perelelhealth2.png" alt="Perelel Recipe">
-              <img class="slide" src="./images/perelelhealth3.png" alt="Perelel Quotes">
-              <img class="slide" src="./images/perelelhealth4.png" alt="Perelel Image With Text">
-          </div>
-        </div>
-        <div class="project">
-          <h3 class="project-title">Hello Bluebyrd</h3>
-          <div class="screenshot-container">
-            <img class="darrow" src="./images/down.png" alt="Arrow Pointing Down">
-              <img class="slide" src="./images/hb1.png" alt="Bluebyrd Desktop Home">
-          </div>
-        </div>
-        <div class="project">
-          <h3 class="project-title">Little Bridges</h3>
-          <div class="screenshot-container">
-            <img class="darrow" src="./images/down.png" alt="Arrow Pointing Down">
-              <img class="slide" src="./images/littlebirds1.png" alt="Little Bridges Testimonials">
-              <img class="slide" src="./images/littlebirds2.png" alt="Little Bridges Bulletpoints with SVGs">
-              <img class="slide" src="./images/littlebirds3.png" alt="Little Bridges Section With Image and Text">
-          </div>
-        </div>
-        <span class="border bl2">Problem Solver<span class="unicode-dot">&#9640;</span>Team Player</span>
-        <span class="border br2">jason.a.oneill@gmail.com<span class="unicode-dot">&#9640;</span>Contact Me </span>
-    </div>
-    </div>
+  <!-- End of all Sections & Footer -->
+  <script src="path/to/lightbox-init.js" type="module"></script>
 
 
 </body>
