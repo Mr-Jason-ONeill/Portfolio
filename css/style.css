@@ -138,7 +138,7 @@ svg {
     flex-direction: column;
     justify-content: center;
     align-content: center;
-    max-width: 500px;
+    max-width: 400px;
     padding-bottom: 2rem;
 }
 
@@ -154,12 +154,13 @@ svg {
 
 .quote-right {
     align-items: flex-end;
-    margin-left: 90%;
+    margin-left: 50%;
 }
 
 blockquote {
     display: flex;
     margin: 0;
+    max-width: 200px;
 }
 
 
