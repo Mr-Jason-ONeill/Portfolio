@@ -304,7 +304,7 @@ blockquote {
 
   .image-container {
     padding: 1rem;
-    background-color: rgb(194, 194, 194);
+    background-color: #1d1d1d;
     display: flex;
     justify-content: center;
     align-items: center;
