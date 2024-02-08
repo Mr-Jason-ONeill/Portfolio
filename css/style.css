@@ -275,6 +275,21 @@ blockquote {
 
 .project-title {
     text-transform: uppercase;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.git-link-icon {
+  width: 20px;
+  color: rgb(250, 247, 232);
+}
+
+.git-link-icon:hover {
+  opacity: 0.7;
 }
 
 .project-info {
