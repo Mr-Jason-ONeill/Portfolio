@@ -21,6 +21,67 @@ svg {
 
 /* ---- End Outer Sections  ---- */
 
+/* ---- Light/Dark Button ---- */
+
+.light-dark-title {
+  padding-right: 0.75rem;
+}
+
+.light-dark {
+	position: relative;
+	display: inline-block;
+	width: 60px;
+	height: 32px;
+}
+
+.light-dark input{
+	opacity: 0;
+	width: 0;
+	height: 0;
+}
+.light-dark .knob{
+	position: absolute;
+	cursor: pointer;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #887E82FF;
+	transition: .2s;
+	border-radius: 6px;
+}
+.light-dark .knob:before{
+	background-color: #000000FF;
+	color: #000000;
+	position: absolute;
+	content: '';
+	height: 24px;
+	width: 24px;
+	left: 4px;
+	bottom: 4px;
+	transition: .2s;
+	border-radius: 6px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.light-dark input:checked + .knob{
+	background-color: #000000FF;
+}
+.light-dark input:focus + .knob{
+	box-shadow: 0 0 1px #2196F3;
+}
+.light-dark input:checked + .knob:before{
+	color: #000000;
+	content: '';
+	background-color: #FFFFFFFF;
+	-webkit-transform: translateX(28px);
+	-ms-transform: translateX(28px);
+	transform: translateX(28px);
+}
+
+/* ---- End of Button ---- */
+
 /* ---- Section 1 ---- */
 
 .section-1 {
@@ -56,6 +117,12 @@ svg {
     font-size: 1.5rem;
     font-weight: 700;
     text-transform: uppercase;
+}
+
+@media (max-width: 500px) {
+  .profile-title {
+    font-size: 1rem;
+  }
 }
 
 .profile-quote {
