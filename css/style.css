@@ -23,6 +23,12 @@ svg {
 
 /* ---- Light/Dark Button ---- */
 
+.light-dark-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
 .light-dark-title {
   padding-right: 0.75rem;
 }
@@ -92,6 +98,7 @@ svg {
     align-content: center;
     flex-wrap: wrap;
     flex-direction: column;
+    margin-top: 1rem;
 }
 
 .section-1-wrapper {
@@ -324,11 +331,14 @@ blockquote {
     }
   }
 
-
   .screenshot {
     width: fit-content;
     border: 1px solid black;
   }
+
+  .pswp__img {
+    cursor: pointer !important;
+}
 
 /* ---- End Projects ---- */
 
