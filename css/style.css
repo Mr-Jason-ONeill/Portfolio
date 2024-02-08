@@ -175,7 +175,8 @@ blockquote {
     flex-wrap: wrap;
 }
 
-.social-icon {
+.social-icon,
+.smile {
     width: 45px;
     color: rgb(250, 247, 232);
 }
@@ -365,6 +366,16 @@ blockquote {
     flex-wrap: wrap;
     flex-direction: row;
     gap: 2rem;
+}
+
+.contact-me {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  flex-direction: row;
 }
 
 .footer-text {
