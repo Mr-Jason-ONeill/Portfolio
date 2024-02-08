@@ -36,8 +36,8 @@ svg {
 .light-dark {
 	position: relative;
 	display: inline-block;
-	width: 60px;
-	height: 32px;
+  width: 50px;
+  height: 20px;
 }
 
 .light-dark input{
@@ -54,19 +54,19 @@ svg {
 	bottom: 0;
 	background-color: #887E82FF;
 	transition: .2s;
-	border-radius: 6px;
+	border-radius: 3px;
 }
 .light-dark .knob:before{
 	background-color: #000000FF;
 	color: #000000;
 	position: absolute;
 	content: '';
-	height: 24px;
-	width: 24px;
+  height: 12px;
+  width: 12px;
 	left: 4px;
 	bottom: 4px;
 	transition: .2s;
-	border-radius: 6px;
+	border-radius: 4px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
