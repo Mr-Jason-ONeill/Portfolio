@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sofia+Sans+Condensed:ital,wght@0,1;0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,1;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="src/photoswipe.css">
+    <link rel="stylesheet" href="photoswipe/dist/photoswipe.css">
     <link rel="icon" type="image/x-icon" href="images\favicon.ico">
 
 </head>
@@ -365,8 +365,67 @@
     </div>
   </div>
   <!-- End of all Sections & Footer -->
-  <script src="js\lightbox-init.js" type="module"></script>
   <script src="js\main.js"></script>
+  <script type="module">
+    import PhotoSwipeLightbox from 'photoswipe/dist/photoswipe-lightbox.esm.js';
+    const lightbox = new PhotoSwipeLightbox({
+    gallery: '.image-container',
+    children: 'a',
+  pswpModule: () => import('photoswipe/dist/photoswipe.esm.js')
+});
+lightbox.init();
+
+  </script>
+
+  <script type="module">
+    import PhotoSwipeLightbox from '/photoswipe/photoswipe-lightbox.esm.js';
+    const options = {
+    gallery:'.image-container',
+    children:'a',
+
+    imageClickAction: 'next',
+    tapAction: 'next',
+  
+  pswpModule: () => import('/photoswipe/photoswipe.esm.js')
+};
+const lightbox = new PhotoSwipeLightbox(options);
+
+lightbox.init();  
+
+  </script>
+
+  <script type="module">
+    import PhotoSwipeLightbox from '/photoswipe/photoswipe-lightbox.esm.js';
+
+const backEasing = {
+  in: 'cubic-bezier(0.6, -0.28, 0.7, 1)',
+  out: 'cubic-bezier(0.3, 0, 0.32, 1.275)',
+  inOut: 'cubic-bezier(0.68, -0.55, 0.265, 1.55)'
+};
+
+const lightbox = new PhotoSwipeLightbox({
+  gallery:'#gallery--customized-transition',
+  children:'a',
+
+  showHideAnimationType: 'zoom',
+  showAnimationDuration: 1000,
+  hideAnimationDuration: 1000,
+
+  pswpModule: () => import('/photoswipe/photoswipe.esm.js')
+});
+lightbox.on('firstUpdate', () => {
+  lightbox.pswp.options.easing = backEasing.out;
+});
+lightbox.on('initialZoomInEnd', () => {
+  lightbox.pswp.options.easing = backEasing.inOut;
+});
+lightbox.on('close', () => {
+  lightbox.pswp.options.easing = backEasing.in;
+});
+lightbox.init();
+
+  </script>
+  
 
 
 </body>
