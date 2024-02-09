@@ -349,6 +349,7 @@ blockquote {
   }
 
   .screenshot {
+    width: -moz-fit-content;
     width: fit-content;
     border: 1px solid black;
   }

@@ -1,12 +1,24 @@
-import Lightbox from './photoswipe-lightbox.esm.js';
 
-const lightbox = new Lightbox({
+import PhotoSwipeLightbox from '/photoswipe/photoswipe-lightbox.esm.js';
+
+const options = {
   gallery: '.image-container',
   children: '.screenshot',
 
-  pswpModule: () => import('./photoswipe.esm.js')
-});
+  secondaryZoomLevel: 'fit',
+  controls: true,
+  counter: true,
 
-lightbox.init(); 
+  imageClickAction: 'close',
+  tapAction: 'close',
 
+  // tap delay is removed if set to false
+  doubleTapAction: false,
+  
+  pswpModule: () => import('/photoswipe/photoswipe.esm.js')
 
+};
+
+const lightbox = new PhotoSwipeLightbox(options);
+
+lightbox.init();
