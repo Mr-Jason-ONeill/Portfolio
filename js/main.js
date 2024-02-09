@@ -1,6 +1,6 @@
 const checkbox = document.getElementById('colorCheckbox');
 const svgs = document.querySelectorAll('svg');
-const imageContainers = document.querySelectorAll('.image-container'); // Updated selector
+const imageContainers = document.querySelectorAll('.image-container'); 
 
 /* rgb(250, 247, 232) or rgb(250, 248, 239) = White
    rgb(17, 16, 16) = Black */
