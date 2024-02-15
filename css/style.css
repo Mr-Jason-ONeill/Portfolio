@@ -341,19 +341,25 @@ cite {
 
 
 .project-image-container {
-    display: flex;
-    flex: 1;
-    width: auto;
-    flex-wrap: wrap;
+  transform: translateX(10%);
+  display: flex;
+  flex: 1;
+  width: auto;
+  flex-wrap: wrap;
 }
 
 
-.project-image-wrapper { 
-    margin-top: 2rem;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1rem;
-  }
+.project-image-wrapper {
+  padding-left: 2rem;
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  justify-items: center;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+}
 
 
   .image-container {
@@ -368,6 +374,7 @@ cite {
 
   @media screen and (max-width: 650px) {
     .project-image-container {
+      transform: translateX(0);
         width: auto;
     }
 
