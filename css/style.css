@@ -398,7 +398,7 @@ cite {
 
   @media (max-width: 900px) {
     .project-image-container {
-      width: 100%;
+      transform: translateX(0);
       display: flex;
       flex-wrap: wrap;
       align-items: center;
