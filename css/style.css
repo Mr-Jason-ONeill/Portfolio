@@ -348,7 +348,6 @@ cite {
   flex-wrap: wrap;
 }
 
-
 .project-image-wrapper {
   padding-left: 2rem;
   margin-top: 2rem;
@@ -361,7 +360,6 @@ cite {
   align-content: center;
 }
 
-
   .image-container {
     width: 90%;
     height: 90%;
@@ -370,6 +368,19 @@ cite {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.image-container img {
+  max-width: 100%;
+  max-height: 100%;
+  width: 300px;
+  height: 200px;
+  border-radius: 10px;
+}
+
+#mobile-screenshot-container img {
+  width: 200px;
+  height: 300px;
 }
 
   @media screen and (max-width: 650px) {
@@ -383,13 +394,7 @@ cite {
     }
   }
 
-  .image-container img {
-    max-width: 100%;
-    max-height: 100%;
-    width: 300px;
-    height: 200px;
-    border-radius: 10px;
-}
+
 
   @media (max-width: 900px) {
     .project-image-container {
