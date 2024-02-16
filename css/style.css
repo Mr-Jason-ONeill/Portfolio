@@ -151,6 +151,12 @@ svg {
   text-transform: uppercase;
 }
 
+@media (max-width: 685px) {
+  .profile-title {
+    font-size: 1.7rem;
+  }
+}
+
 @media (max-width: 500px) {
   .profile-title {
     font-size: 1rem;
@@ -161,12 +167,6 @@ svg {
   .profile-title {
     font-size: 0.7rem;
   }
-    .quote-left {
-      position: absolute;
-      transform: translateY(-20px);
-      top: 0;
-      left: 0;
-    }
 }
 
 
@@ -188,11 +188,22 @@ svg {
 }
 
 .quote-left {
-  align-items: flex-start;
   position: absolute;
   transform: translateX(-30px);
   top: 0;
   left: 0;
+}
+
+@media (max-width: 350px) {
+  .quote-left {
+    position: absolute;
+    transform: translateY(-25px);
+    top: 0;
+    left: 0;
+}
+
+
+
 }
 
 .quote-right {
