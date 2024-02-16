@@ -16,7 +16,7 @@ svg {
 /* ---- Outer Sections  ---- */
 
 .sections-container {
-    width: 90%;
+    width: 100%;
 }
 
 .down-arrow-container {
@@ -268,6 +268,7 @@ cite {
 /* ---- Section 3 ---- */
 
 .section-3-wrapper {
+    width: 90%;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
