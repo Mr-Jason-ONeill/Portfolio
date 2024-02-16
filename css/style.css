@@ -30,6 +30,9 @@ transition: ease 0.3s;
 color: azure;
 width: 20px;
 position: sticky;
+padding: 1rem;
+border-radius: 50%;
+border: solid 2px white;
 }
 
 @media screen and (max-width: 999px) {

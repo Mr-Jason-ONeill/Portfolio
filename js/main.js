@@ -1,9 +1,7 @@
 const checkbox = document.getElementById('colorCheckbox');
 const svgs = document.querySelectorAll('svg');
-const imageContainers = document.querySelectorAll('.image-container'); 
-
-/* rgb(250, 247, 232) or rgb(250, 248, 239) = White
-   rgb(17, 16, 16) = Black */
+const imageContainers = document.querySelectorAll('.image-container');
+const downArrow = document.querySelector('.down-arrow');
 
 checkbox.addEventListener('change', function() {
     if (this.checked) {
@@ -15,6 +13,7 @@ checkbox.addEventListener('change', function() {
         imageContainers.forEach(container => {
             container.style.backgroundColor = 'rgb(194, 194, 194)';
         });
+        downArrow.style.borderColor = 'rgb(17, 16, 16)';
     } else {
         document.body.style.backgroundColor = 'rgb(17, 16, 16)';
         document.body.style.color = 'rgb(230 230 230)';
@@ -24,8 +23,10 @@ checkbox.addEventListener('change', function() {
         imageContainers.forEach(container => {
             container.style.backgroundColor = '#1d1d1d';
         });
+        downArrow.style.borderColor = 'white';
     }
 });
+
 
 let lastScrollTop = 0;
 window.addEventListener('scroll', function() {
