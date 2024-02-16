@@ -47,9 +47,9 @@ transform: rotate(180deg);
 /* ---- Light/Dark Button ---- */
 
 .light-dark-container {
-display: flex;
-justify-content: flex-start;
-align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .light-dark-title {
@@ -435,6 +435,19 @@ height: 300px;
   border: 1px solid black;
 }
 
+@media screen and (min-width: 1999px) and (max-width: 2500px) {
+  .image-container img {
+    max-width: 100%;
+    max-height: 100%;
+    width: 500px;
+    height: 400px;
+    border-radius: 10px;
+  } 
+#mobile-screenshot-container img {
+  width: 400px;
+  height: 500px;
+  }
+}
 
 /* ---- End Projects ---- */
 
