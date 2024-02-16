@@ -38,6 +38,10 @@ svg {
 }  
 }
 
+.rotate-up {
+  transform: rotate(180deg);
+}
+
 /* ---- End Outer Sections  ---- */
 
 /* ---- Light/Dark Button ---- */

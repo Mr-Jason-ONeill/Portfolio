@@ -27,3 +27,15 @@ checkbox.addEventListener('change', function() {
     }
 });
 
+let lastScrollTop = 0;
+window.addEventListener('scroll', function() {
+  let scrollTop = window.scrollY || document.documentElement.scrollTop;
+  if (scrollTop > lastScrollTop) {
+    // Scrolling down
+    document.querySelector(".down-arrow").classList.remove("rotate-up");
+  } else {
+    // Scrolling up
+    document.querySelector(".down-arrow").classList.add("rotate-up");
+  }
+  lastScrollTop = scrollTop;
+}, false);
