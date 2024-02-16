@@ -353,7 +353,7 @@ cite {
 }
 
 .project-image-wrapper {
-  padding-left: 2rem;
+  width: 100%;
   margin-top: 2rem;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
