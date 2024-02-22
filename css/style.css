@@ -156,7 +156,7 @@ font-weight: 700;
 text-transform: uppercase;
 }
 
-@media screen and (min-width: 350px) and (max-width: 900px) {
+@media screen and (min-width: 481px) and (max-width: 900px) {
   .profile-title h1 {
     display: flex;
     margin-top: 0;
@@ -195,7 +195,7 @@ top: 0;
 left: 0;
 }
 
-@media (max-width: 350px) {
+@media screen and (min-width: 350px) and (max-width: 480px) {
 .quote-left {
   position: absolute;
   transform: translateY(-25px);
@@ -203,8 +203,17 @@ left: 0;
   left: 0;
 }
 
-
-
+.profile-title h1 {
+  display: flex;
+  margin-top: 0;
+  font-size: 1.25rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  }
 }
 
 .quote-right {
