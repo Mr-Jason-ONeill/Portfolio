@@ -386,7 +386,8 @@ opacity: 0.7;
   position: relative;
 }
 
-.screenshot {
+.screenshot,
+.screenshot-mobile {
   position: absolute;
   left: 50%;
   top: 50%;
@@ -395,6 +396,11 @@ opacity: 0.7;
   height: 80%;
   border-radius: 10px;
   border: 1px solid black;
+}
+
+.screenshot-mobile {
+  width: 60%;
+  height: 80%;
 }
 
 @media screen and (min-width: 350px) and (max-width: 900px) {
