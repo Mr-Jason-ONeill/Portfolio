@@ -148,28 +148,24 @@ transform: translateX(28px);
   margin-bottom: 0;
 }
 
-.profile-title {
-line-height: 5px;
+.profile-title h1 {
 font-size: 3.5rem;
+margin-top: 0;
 font-weight: 700;
 text-transform: uppercase;
 }
 
-@media (max-width: 685px) {
-.profile-title h1 {
-  font-size: 1.7rem;
-}
-}
-
-@media (max-width: 500px) {
-.profile-title {
-  font-size: 1rem;
-}
-}
-
-@media (max-width: 350px) {
-.profile-title {
-  font-size: 0.7rem;
+@media screen and (min-width: 350px) and (max-width: 900px) {
+  .profile-title h1 {
+    display: flex;
+    margin-top: 0;
+    font-size: 2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
 }
 }
 
@@ -308,14 +304,8 @@ opacity: 0.7;
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  gap: 1rem;
-}
-
-@media (max-width: 900px) {
-  .projects {
-    display: flex;
-    flex-direction: column;
-  }
+  align-content: flex-start;
+  align-items: flex-start;
 }
 
 .project-section-title {
