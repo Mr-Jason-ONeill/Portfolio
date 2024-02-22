@@ -337,6 +337,7 @@ text-transform: uppercase;
 }
 
 .project-title {
+width: 100%;
 font-size: 1.5rem;
 text-transform: uppercase;
 display: flex;
