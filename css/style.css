@@ -416,6 +416,10 @@ opacity: 0.7;
 }
 
 @media screen and (min-width: 350px) and (max-width: 900px) {
+.project-section-title {
+  font-size: 1.75rem;
+}
+
   .projects {
     display: flex;
     flex-direction: column;
