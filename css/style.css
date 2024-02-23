@@ -423,7 +423,7 @@ opacity: 0.7;
 }
 
 .screenshot-mobile {
-    width: 75%;
+    width: auto;
     height: calc(100% - 5rem);
 }
 
