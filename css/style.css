@@ -409,6 +409,8 @@ Height & Width is set to 100% so that the whole container can be clicked ---*/
 /* --- These classes focus on the image itself ---*/
 .screenshot,
 .screenshot-mobile {
+  object-position: 25%;
+  object-fit: cover;
   display: flex; 
   position: absolute;
   width: 95%;
