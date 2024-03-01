@@ -342,6 +342,7 @@ text-transform: uppercase;
 
 .project-writing {
   top: 0;
+  padding-left: 1.18rem;
   padding-right: 5.2rem;
   position: sticky;
   max-width: 300px;
