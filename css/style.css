@@ -1,12 +1,13 @@
 /* ---- HTML  ---- */
 body {
   font-family: 'Sofia Sans Condensed', sans-serif;
-  color: rgb(230 230 230);
+  color: #fff;
   background-color: rgb(17, 16, 16);
+  margin: 0;
 }
 
 svg {
- fill: rgb(230 230 230); 
+ fill: #fff; 
 }
 
 /* ---- End HTML  ----*/
@@ -27,13 +28,13 @@ width: 100%;
 margin-left: 4rem;
 top: 30%;
 transition: ease 0.3s;
-color: azure;
+color: #fff;
 width: 20px;
 height: 20px;
 position: sticky;
 padding: 1rem;
 border-radius: 50%;
-border: solid 2px white;
+border: solid 2px #fff;
 }
 
 @media screen and (max-width: 999px) {
@@ -107,7 +108,7 @@ box-shadow: 0 0 1px #2196F3;
 .light-dark input:checked + .knob:before{
 color: #000000;
 content: '';
-background-color: #FFFFFFFF;
+background-color: #FFF;
 -webkit-transform: translateX(28px);
 -ms-transform: translateX(28px);
 transform: translateX(28px);
@@ -144,6 +145,7 @@ transform: translateX(28px);
 }
 
 .name {
+  font-family: 'Inter', sans-serif;
   text-transform: uppercase;
   margin-bottom: 0;
 }
@@ -172,6 +174,7 @@ text-transform: uppercase;
 
 
 .profile-quote {
+font-family: 'Inter', sans-serif;
 display: flex;
 flex-wrap: wrap;
 flex-direction: column;
@@ -180,19 +183,20 @@ align-content: center;
 max-width: 400px;
 padding-top: 1rem;
 padding-bottom: 2rem;
+position: relative;
+margin: 0;
 }
 
 .quote-left,
 .quote-right {
   width: 20px;
-  color: rgb(230 230 230);
+  color: #fff;
 }
 
 .quote-left {
-position: absolute;
-transform: translateX(-30px);
-top: 0;
-left: 0;
+  position: absolute;
+  transform: translateX(-30px);
+  left: 0;
 }
 
 @media screen and (min-width: 250px) and (max-width: 480px) {
@@ -217,9 +221,7 @@ left: 0;
 }
 
 .quote-right {
-  transform: translate(-105px, 35px);
-  top: 0;
-  right: 0;
+  padding-left: 1rem;
   position: absolute;
 }
 
@@ -227,12 +229,17 @@ blockquote {
 position: relative;
 display: flex;
 margin: 0;
-max-width: 260px;
 flex-direction: column;
 flex-wrap: wrap;
 align-content: center;
 justify-content: center;
 align-items: center;
+}
+
+.cite-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 cite {
@@ -254,7 +261,7 @@ opacity: 0.7;
 .social-icon,
 .smile {
   width: 45px;
-  color: rgb(230 230 230);
+  color: #fff;
 }
 
 .social-icon:hover {
@@ -292,6 +299,10 @@ opacity: 0.7;
 
 /* ---- Section 3 ---- */
 
+.section-3 {
+  padding-top: 2rem;
+}
+
 .section-3-wrapper {
   width: 100%;
   max-width: 2160px;
@@ -311,6 +322,8 @@ opacity: 0.7;
 
 /* ---- Projects ---- */
 .projects {
+  padding-left: 1.18rem;
+  padding-right: 5.6rem;
   margin-right: auto;
   position: relative;
   width: 100%;
@@ -322,13 +335,12 @@ opacity: 0.7;
 
 .project-section-title {
 font-size: 3rem;
-font-weight: 700;
+font-weight: 750;
 text-transform: uppercase;
 }
 
 .project-writing {
   top: 0;
-  padding-left: 1.18rem;
   padding-right: 5.2rem;
   position: sticky;
   max-width: 300px;
@@ -357,7 +369,7 @@ gap: 1rem;
 
 .git-link-icon {
 width: 1.5rem;
-color: rgb(250, 247, 232);
+color: #fff;
 }
 
 .git-link-icon:hover {
@@ -365,6 +377,7 @@ opacity: 0.7;
 }
 
 .project-info {
+  font-family: 'Inter', sans-serif;
   font-size: 1rem;
   display: flex;
   flex-direction: column;
@@ -377,6 +390,7 @@ opacity: 0.7;
 
 .project-image-container {
   flex: 1;
+  margin-right: 5.6rem;
 }
 
 .project-image-wrapper {
@@ -399,22 +413,37 @@ opacity: 0.7;
 .photoswipe-image,
 .photoswipe-mobile-image {
   position: absolute;
+  display: flex;
   width: 100%;
   height: 100%;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
 }
-/* --- Having absolute, allows for a height & width to be set.
-Height & Width is set to 100% so that the whole container can be clicked ---*/
+
+.screenshot-wrapper {
+  padding: 1rem;
+  position: absolute;
+  width: 90%;
+  height: 100%;
+}
+
+.screenshot-mobile-wrapper {
+  padding: 1rem;
+  position: absolute;
+  width: 100%;
+  height: 90%;
+}
 
 
 /* --- These classes focus on the image itself ---*/
 .screenshot,
 .screenshot-mobile {
-  object-position: 25%;
-  object-fit: cover;
   display: flex; 
   position: absolute;
-  width: 95%;
-  height: 80%;
+  width: 100%;
+  height: auto;
   border-radius: 10px;
   border: 1px solid black;
   top: 50%;
@@ -479,6 +508,11 @@ Height & Width is set to 100% so that the whole container can be clicked ---*/
 
 
 /* ---- Footer ---- */
+
+.footer-container {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
 
 .footer-wrapper {
   display: flex;
