@@ -169,8 +169,8 @@ text-transform: uppercase;
   .profile-title h1 {
     display: flex;
     margin-top: 0;
-    font-size: 2rem;
-    font-weight: 700;
+    font-size: 2.5rem;
+    font-weight: 750;
     text-transform: uppercase;
     flex-wrap: wrap;
     align-content: center;
@@ -211,7 +211,7 @@ margin: 0;
 .profile-title h1 {
   display: flex;
   margin-top: 0;
-  font-size: 1.25rem;
+  font-size: 2rem;
   font-weight: 750;
   text-transform: uppercase;
   flex-wrap: wrap;
@@ -534,7 +534,7 @@ opacity: 0.7;
 /* ---- Footer ---- */
 
 .footer-container {
-  padding-top: 2rem;
+  padding-top: 4rem;
   padding-bottom: 2rem;
 }
 
@@ -544,6 +544,16 @@ opacity: 0.7;
   justify-content: space-around;
   flex-direction: row;
   flex-wrap: wrap;
+}
+
+@media screen and (min-width: 250px) and (max-width: 900px) {
+.footer-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  }
 }
 
 .footer-socials {
