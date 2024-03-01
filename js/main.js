@@ -5,7 +5,7 @@ const downArrow = document.querySelector('.down-arrow');
 
 checkbox.addEventListener('change', function() {
     if (this.checked) {
-        document.body.style.backgroundColor = 'rgb(230 230 230)';
+        document.body.style.backgroundColor = '#fff';
         document.body.style.color = 'rgb(17, 16, 16)';
         svgs.forEach(svg => {
             svg.style.fill = 'rgb(17, 16, 16)';
@@ -16,7 +16,7 @@ checkbox.addEventListener('change', function() {
         downArrow.style.borderColor = 'rgb(17, 16, 16)';
     } else {
         document.body.style.backgroundColor = 'rgb(17, 16, 16)';
-        document.body.style.color = 'rgb(230 230 230)';
+        document.body.style.color = '#fff';
         svgs.forEach(svg => {
             svg.style.fill = 'rgb(230 230 230)';
         });
