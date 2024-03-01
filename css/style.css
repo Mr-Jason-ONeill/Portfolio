@@ -21,6 +21,12 @@ svg {
   width: 100%;
 }
 
+@media screen and (min-width: 250px) and (max-width: 900px) {
+  .sections-container {
+    overflow-x: hidden;
+  }
+}
+
 .down-arrow-container {
 width: 100%;
 }
@@ -181,6 +187,7 @@ flex-wrap: wrap;
 flex-direction: column;
 justify-content: center;
 align-content: center;
+width: 300px;
 max-width: 400px;
 padding-top: 1rem;
 padding-bottom: 2rem;
@@ -317,6 +324,12 @@ opacity: 0.7;
   align-items: center;
 }
 
+@media screen and (min-width: 250px) and (max-width: 900px) {
+.section-3-wrapper {
+  align-content: center;
+  }
+}
+
 .section-3 ~ .down-arrow {
   visibility: hidden;
 }
@@ -333,6 +346,12 @@ opacity: 0.7;
   align-content: flex-start;
   align-items: flex-start;
 }
+
+@media screen and (min-width: 250px) and (max-width: 900px) {
+  .projects {
+    padding-right: 0;
+    }
+  }
 
 .project-section-title {
 font-size: 3rem;
@@ -462,10 +481,6 @@ opacity: 0.7;
 }
 
 @media screen and (min-width: 250px) and (max-width: 900px) {
-body {
-  overflow-x: hidden;
-}
-
 .project-section-title {
   font-size: 1.75rem;
 }
