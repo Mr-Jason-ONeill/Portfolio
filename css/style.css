@@ -462,11 +462,17 @@ opacity: 0.7;
 }
 
 @media screen and (min-width: 250px) and (max-width: 900px) {
+body {
+  overflow-x: hidden;
+}
+
 .project-section-title {
   font-size: 1.75rem;
 }
 
   .projects {
+    position: relative;
+    padding-left: 0;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -474,9 +480,10 @@ opacity: 0.7;
     margin-left: auto;
     margin-right: auto;
     align-content: center;
-    }
+    justify-content: center;
+}
 
-    .project-info {
+.project-info {
       width: 100%;
       font-size: 1rem;
       display: flex;
@@ -494,6 +501,7 @@ opacity: 0.7;
   .project-image-container {
     flex: 1;
     width: 100%;
+    margin-right: 0;
   }
   .project-image-wrapper {
     margin-top: 2rem;
