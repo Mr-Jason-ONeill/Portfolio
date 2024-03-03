@@ -4,7 +4,6 @@ body {
   color: #fff;
   background-color: rgb(17, 16, 16);
   margin: 0;
-  overflow-x: hidden;
 }
 
 svg {
@@ -22,9 +21,6 @@ svg {
 }
 
 @media screen and (min-width: 250px) and (max-width: 900px) {
-  .sections-container {
-    overflow-x: hidden;
-  }
   .down-arrow {
     visibility: hidden;
     }  
