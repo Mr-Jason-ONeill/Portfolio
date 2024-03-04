@@ -43,3 +43,19 @@ window.addEventListener('scroll', function() {
   }
   lastScrollTop = scrollTop;
 }, false);
+
+let lastScrollTop = 0;
+window.addEventListener('scroll', function() {
+  let scrollTop = window.scrollY || document.documentElement.scrollTop;
+  if (scrollTop > lastScrollTop && scrollTop > 0) {
+    // Scrolling down
+    document.querySelector(".down-arrow").classList.remove("rotate-up");
+  } else if (scrollTop === 0) {
+    // At the top of the page
+    document.querySelector(".down-arrow").classList.remove("rotate-up");
+  } else {
+    // Scrolling up
+    document.querySelector(".down-arrow").classList.add("rotate-up");
+  }
+  lastScrollTop = scrollTop;
+}, false);
