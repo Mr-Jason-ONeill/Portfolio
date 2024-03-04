@@ -1,13 +1,11 @@
 const checkbox = document.getElementById('colorCheckbox');
 const svgs = document.querySelectorAll('svg');
-const imageContainers = document.querySelectorAll('.image-container'); 
-
-/* rgb(250, 247, 232) or rgb(250, 248, 239) = White
-   rgb(17, 16, 16) = Black */
+const imageContainers = document.querySelectorAll('.image-container');
+const downArrow = document.querySelector('.down-arrow');
 
 checkbox.addEventListener('change', function() {
     if (this.checked) {
-        document.body.style.backgroundColor = 'rgb(250, 248, 239)';
+        document.body.style.backgroundColor = '#fff';
         document.body.style.color = 'rgb(17, 16, 16)';
         svgs.forEach(svg => {
             svg.style.fill = 'rgb(17, 16, 16)';
@@ -15,15 +13,33 @@ checkbox.addEventListener('change', function() {
         imageContainers.forEach(container => {
             container.style.backgroundColor = 'rgb(194, 194, 194)';
         });
+        downArrow.style.borderColor = 'rgb(17, 16, 16)';
     } else {
         document.body.style.backgroundColor = 'rgb(17, 16, 16)';
-        document.body.style.color = 'rgb(250, 247, 232)';
+        document.body.style.color = '#fff';
         svgs.forEach(svg => {
-            svg.style.fill = 'rgb(250, 247, 232)';
+            svg.style.fill = 'rgb(230 230 230)';
         });
         imageContainers.forEach(container => {
             container.style.backgroundColor = '#1d1d1d';
         });
+        downArrow.style.borderColor = 'white';
     }
 });
 
+
+let lastScrollTop = 0;
+window.addEventListener('scroll', function() {
+  let scrollTop = window.scrollY || document.documentElement.scrollTop;
+  if (scrollTop > lastScrollTop && scrollTop > 0) {
+    // Scrolling down
+    document.querySelector(".down-arrow").classList.remove("rotate-up");
+  } else if (scrollTop === 0) {
+    // At the top of the page
+    document.querySelector(".down-arrow").classList.remove("rotate-up");
+  } else {
+    // Scrolling up
+    document.querySelector(".down-arrow").classList.add("rotate-up");
+  }
+  lastScrollTop = scrollTop;
+}, false);

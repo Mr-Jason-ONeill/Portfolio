@@ -6,29 +6,34 @@
     <title>Jason O'Neill's Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Sofia+Sans+Condensed:ital,wght@0,1;0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,1;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Sofia+Sans+Condensed:ital,wght@0,1..1000;1,1..1000&display=swap" rel="stylesheet">
+
+
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="photoswipe/dist/photoswipe.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/default-skin/default-skin.min.css">
     <link rel="icon" type="image/x-icon" href="images\favicon.ico">
 
 </head>
 <body>
   <!-- Sections-container is for all sections on page -->
-  <div class="sections-container">
+  <section class="sections-container">
 
 <!-- Light/Dark Button -->
 <div class="light-dark-container">
   <span class="light-dark-title">Dark/Light Mode</span>
     <label class="light-dark" for="colorCheckbox">
-    <input type="checkbox" id="colorCheckbox">
+    <input aria-label="light-dark-checkbox" type="checkbox" id="colorCheckbox">
     <span class="knob"></span>
     </label>
 </div>
+
+<div class="down-arrow-container">
       <!-- Section-1 focuses on Profile image, name and title -->
-      <div class="section-1">
+  <section class="section-1">
         <div class="section-1-wrapper">
           <div class="profile-image-container">
-            <img class="profile-image" src="images\Avatar.png" alt="Cartoon Image of Universe Orbiting Around Me" width="300px" >
+            <img class="profile-image" src="images\Avatar.png" alt="Cartoon Image of Universe Orbiting Around Me" width="150px" >
           </div>
           <div class="profile-name">
             <p class="name"> Jason Anthony O'Neill</p>
@@ -39,17 +44,20 @@
           </div>
 
           <div class="profile-quote">
-            <svg class="quote-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-              <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
-              <path d="M0 216C0 149.7 53.7 96 120 96h8c17.7 0 32 14.3 32 32s-14.3 32-32 32h-8c-30.9 0-56 25.1-56 56v8h64c35.3 0 64 28.7 64 64v64c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V320 288 216zm256 0c0-66.3 53.7-120 120-120h8c17.7 0 32 14.3 32 32s-14.3 32-32 32h-8c-30.9 0-56 25.1-56 56v8h64c35.3 0 64 28.7 64 64v64c0 35.3-28.7 64-64 64H320c-35.3 0-64-28.7-64-64V320 288 216z"/></svg>
               <blockquote class="quote">
-                You do not need to be great in order to start, but you do have to start in order to be great.
+                  <p class="quote-text">
+                    <svg class="quote-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                      <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                      <path d="M0 216C0 149.7 53.7 96 120 96h8c17.7 0 32 14.3 32 32s-14.3 32-32 32h-8c-30.9 0-56 25.1-56 56v8h64c35.3 0 64 28.7 64 64v64c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V320 288 216zm256 0c0-66.3 53.7-120 120-120h8c17.7 0 32 14.3 32 32s-14.3 32-32 32h-8c-30.9 0-56 25.1-56 56v8h64c35.3 0 64 28.7 64 64v64c0 35.3-28.7 64-64 64H320c-35.3 0-64-28.7-64-64V320 288 216z"/></svg>You don’t need to be great to start, but you need to start In order to be great.
+                    <svg class="quote-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                      <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                      <path d="M448 296c0 66.3-53.7 120-120 120h-8c-17.7 0-32-14.3-32-32s14.3-32 32-32h8c30.9 0 56-25.1 56-56v-8H320c-35.3 0-64-28.7-64-64V160c0-35.3 28.7-64 64-64h64c35.3 0 64 28.7 64 64v32 32 72zm-256 0c0 66.3-53.7 120-120 120H64c-17.7 0-32-14.3-32-32s14.3-32 32-32h8c30.9 0 56-25.1 56-56v-8H64c-35.3 0-64-28.7-64-64V160c0-35.3 28.7-64 64-64h64c35.3 0 64 28.7 64 64v32 32 72z"/></svg>
+                  </p>
               </blockquote>
-              
-              <svg class="quote-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-                <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
-                <path d="M448 296c0 66.3-53.7 120-120 120h-8c-17.7 0-32-14.3-32-32s14.3-32 32-32h8c30.9 0 56-25.1 56-56v-8H320c-35.3 0-64-28.7-64-64V160c0-35.3 28.7-64 64-64h64c35.3 0 64 28.7 64 64v32 32 72zm-256 0c0 66.3-53.7 120-120 120H64c-17.7 0-32-14.3-32-32s14.3-32 32-32h8c30.9 0 56-25.1 56-56v-8H64c-35.3 0-64-28.7-64-64V160c0-35.3 28.7-64 64-64h64c35.3 0 64 28.7 64 64v32 32 72z"/></svg>
+              <div class="cite-container">
                 <cite>~ Les Brown</cite>
+              </div>
+              
           </div>
           <div class="profile-socials">
             <div class="social-icon">
@@ -85,33 +93,38 @@
 
           </div>
         </div>
-      </div>
+  </section>
+
+  <svg class="down-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M169.4 470.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 370.8 224 64c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 306.7L54.6 265.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"/></svg>
+
           <!-- Section-2 focuses on "About Me" -->
-          <div class="section-2">
+  <section class="section-2">
             <div class="section-2-wrapper">
-              <svg class="down-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M169.4 470.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 370.8 224 64c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 306.7L54.6 265.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"/></svg>
               <div class="sections-wrapper">
               <div class="about-me">
                 <p>
-                  Based in Resolven, South Wales,  United Kingdom. Jason is a passionate and innovative Junior Web Developer dedicated to crafting engaging, user-friendly digital experiences. With a foundation in <a 
+                  Based in Resolven, South Wales,  United Kingdom. Jason is a passionate and innovative Junior Web Developer dedicated to crafting engaging, user-friendly digital experiences. With a foundation in <a
+                  rel="noopener" 
                   title="Udemy Course by Dr Angela Yu"
-                  class="Bootcamp" href="https://www.udemy.com/course/the-complete-web-development-bootcamp/">"The Complete 2024 Web Development Bootcamp ~ Dr. Angela Yu"</a>, Jason has honed a solid skill set in HTML, CSS, Shopify and JavaScript, alongside a keen interest in emerging technologies. 
+                  class="Bootcamp" href="https://www.udemy.com/course/the-complete-web-development-bootcamp/"
+                  target="_blank">"The Complete 2024 Web Development Bootcamp ~ Dr. Angela Yu"</a>, Jason has honed a solid skill set in HTML, CSS, Shopify and JavaScript, alongside a keen interest in emerging technologies. 
                 </p>
-                <br>
                 <p>
                   Since embarking on his web development journey in 2022, Jason has contributed to a variety of projects. Each project has been a stepping stone, enhancing his coding skills and understanding of user-centric design principles.
                 </p>
-                <br>
+
                 <p>
                   Eager to grow and always ready for a challenge, Jason is on the lookout for opportunities to collaborate on projects that push the boundaries of what's possible on the web. He believes in continuous learning and strives to stay at the forefront of web development trends and best practices.
                 </p>
               </div>
             </div>
           </div>
-        </div>
+  </section>
+<!-- End of arrow container -->
+      </div>
 
           <!-- Section-3 focuses on Projects -->
-          <div class="section-3">
+  <section class="section-3" data-pswp>
             <div class="section-3-wrapper">
               <h2 class="project-section-title">Projects</h2>
               <!-- Project 1-->
@@ -129,7 +142,7 @@
                 </div>
                 <div class="project-info">
                   <p>
-                    Jason found himself inspired by Perelel Health's elegant web design, sparking a desire to elevate his CSS skills through emulation on a Shopify platform. Taking cues from Perelel's seamless layout and refined styling, he meticulously crafted a replica that embodies their sophisticated design ethos. Employing refined CSS techniques and meticulous attention to detail, his aim was to capture Perelel Health's essence while infusing his own creative flair. The result? A visually stunning Shopify store that not only honors Perelel's design legacy but also showcases Jason's dedication to mastering CSS and crafting compelling web experiences.
+                    Jason found himself inspired by Perelel Health's elegant web design, sparking a desire to elevate his CSS skills through emulation on a Shopify platform. Taking cues from Perelel's seamless layout and refined styling, he meticulously crafted a replica that embodies their sophisticated design ethos.
                   </p>
                   <ul>
                     <li>Shopify</li>
@@ -144,39 +157,47 @@
               <div class="project-image-container">
                 <div class="project-image-wrapper">
                   <div class="image-container">
-                    <a href="images\perelelhealth_bulletpoint.png"
+                    <a class="photoswipe-image" href="images\perelelhealth_bulletpoint.png"
                     data-pswp-width="1200" 
                     data-pswp-height="600"
                     target="_blank"
                     title="Bulletpoint Section For Perelel Health ">
-                   <img class="screenshot" src="images\perelelhealth_bulletpoint.png" alt="Screenshot of a bulletpoint section">
+                    <div class="screenshot-wrapper">
+                      <img class="screenshot" src="images\perelelhealth_bulletpoint.png" alt="Screenshot of a bulletpoint section">
+                    </div>
                     </a>
                   </div>
                   <div class="image-container">
-                    <a href="images\perelelhealth_imagecard.png"
+                    <a class="photoswipe-image"  href="images\perelelhealth_imagecard.png"
                     data-pswp-width="1200" 
                     data-pswp-height="600"
                     target="_blank"
                     title="Image Card With Text Displayed For Perelel Health">
-                    <img class="screenshot" src="images\perelelhealth_imagecard.png" alt="Screenshot of a section that allowed client to add or remove text with an image">
+                    <div class="screenshot-wrapper">
+                      <img class="screenshot" src="images\perelelhealth_imagecard.png" alt="Screenshot of a section that allowed client to add or remove text with an image">
+                    </div>
                     </a>
                   </div>
                   <div class="image-container">
-                    <a href="images\perelelhealth_compare.png"
+                    <a class="photoswipe-image"  href="images\perelelhealth_compare.png"
                     data-pswp-width="1200" 
                     data-pswp-height="600"
                     target="_blank"
                     title="Comparison Section For Perelel Health ">
-                    <img class="screenshot" src="images\perelelhealth_compare.png" alt="Screenshot of product comparison section">
+                    <div class="screenshot-wrapper">
+                      <img class="screenshot" src="images\perelelhealth_compare.png" alt="Screenshot of product comparison section">
+                    </div>
                     </a>
                   </div>
                   <div class="image-container">
-                    <a href="images\perelelhealth_recipe.png"
+                    <a class="photoswipe-image"  href="images\perelelhealth_recipe.png"
                     data-pswp-width="1200" 
                     data-pswp-height="600"
                     target="_blank"
                     title="Recipe Section For Perelel Health ">
-                    <img class="screenshot" src="images\perelelhealth_recipe.png" alt="screenshot of recipe section containing blocks">
+                    <div class="screenshot-wrapper">
+                      <img class="screenshot" src="images\perelelhealth_recipe.png" alt="screenshot of recipe section containing blocks">
+                    </div>
                     </a>
                   </div>
               </div>
@@ -188,123 +209,135 @@
               <!-- Project 2 -->
               <div class="projects">
                 <div class="project-writing">
-                <div class="project-title">
-                  <h3> Hellobluebyrd</h3>
-                </div>
-                <div class="project-info">
-                  <p>
-                    Enthralled by the mesmerizing design of HelloBlueByrd, Jason's passion for advancing his CSS expertise was reignited. With unwavering focus, he embarked on the task of replicating their captivating landing page, immersing himself in the intricacies of responsive design. Each element was meticulously crafted to seamlessly adapt across diverse devices, ensuring the page's allure remained intact across all screen sizes. Through this endeavor, Jason not only paid homage to HelloBlueByrd's design ethos but also honed his ability to create dynamic and engaging web experiences that resonate with contemporary audiences.
-                  </p>
-                  <ul>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                  </ul>
-                </div>
-                </div>
-
-                <div class="project-image-container">
-                  <div class="project-image-wrapper">
-                    <div class="image-container">
+                  <div class="project-title">
+                    <h3> Little Bridges </h3>
+                    <span class="git-link-icon">
                       <a 
-                      title="Desktop Landing Page For HelloBlueByrd"
-                      href="images\hellobluebyrd_password_desktop.png"
-                      data-pswp-width="1200" 
-                      data-pswp-height="600"
-                      target="_blank">
-                      <img class="screenshot" src="images\hellobluebyrd_password_desktop.png" alt="Screenshot of desktop landing page">
-                      </a>
-                    </div>
-                    <div class="image-container">
-                      <a 
-                      title="Mobile Landing Page For HelloBlueByrd"
-                      href="images\hellobluebyrd_password(iPhone SE).png"
-                      data-pswp-width="1200" 
-                      data-pswp-height="600"
-                      target="_blank">
-                      <img class="screenshot" src="images\hellobluebyrd_password(iPhone SE).png" alt="Screenshot of mobile landing page">
-                      </a>
-                    </div>
+                      title="Github Link to Repo"
+                      href="https://github.com/Mr-Jason-ONeill/littlebirds">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
+                          <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                          <path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+                          </a>
+                    </span>
+                  </div>
+                  <div class="project-info">
+                    <p>
+                      Inspired by the captivating allure of Little Bridges' design, Jason committed himself to refining his Shopify and Liquid skills by recreating their entire website. From the homepage to the deepest corners of the site, he painstakingly reconstructed Little Bridges' charming aesthetic, ensuring each element was not only visually pleasing but also responsive across all devices.
+                      </p>
+                    <ul>
+                      <li>Shopify</li>
+                      <li>Liquid</li>
+                      <li>HTML</li>
+                      <li>CSS</li>
+                    </ul>
+                  </div>
+                  </div>
+  
+                  <div class="project-image-container">
+                    <div class="project-image-wrapper">
+                      <div class="image-container">
+                        <a class="photoswipe-image" 
+                        title="Hero Section For Little Bridges"
+                        href="images\littlebirds_hero.png"
+                        data-pswp-width="1200" 
+                        data-pswp-height="600"
+                        target="_blank">
+                        <div class="screenshot-wrapper">
+                          <img class="screenshot" src="images\littlebirds_hero.png" alt="Screenshot of hero section">
+                        </div>
+                        </a>
+                      </div>
+                      <div class="image-container">
+                        <a class="photoswipe-image" 
+                        title="Introduction To Little Bridges Section"
+                        href="images\littlebirds_introsection.png"
+                        data-pswp-width="1200" 
+                        data-pswp-height="600"
+                        target="_blank">
+                        <div class="screenshot-wrapper">
+                          <img class="screenshot" src="images\littlebirds_introsection.png" alt="Screenshot of section of Introduction of company">
+                        </div>
+                        </a>
+                      </div>
+                      <div class="image-container">
+                        <a class="photoswipe-image" 
+                        title="Bulletpoint Section With Svg's For Little Bridges"
+                        href="images\littlebirds_plussection.png"
+                        data-pswp-width="1200" 
+                        data-pswp-height="600"
+                        target="_blank">
+                        <div class="screenshot-wrapper">
+                          <img class="screenshot" src="images\littlebirds_plussection.png" alt="Screenshot of bulletpoint section containing svg's as bulletpoints">
+                        </div>
+                        </a>
+                      </div>
+                      <div class="image-container">
+                        <a class="photoswipe-image" 
+                        title="Testimonial Section For Little Bridges"
+                        href="images\littlebirds_testimonial.png"
+                        data-pswp-width="1200" 
+                        data-pswp-height="600"
+                        target="_blank">
+                        <div class="screenshot-wrapper">
+                          <img class="screenshot" src="images\littlebirds_testimonial.png" alt="Screenshot of testimonials section">
+                        </div>
+                        </a>
+                      </div>
+                  </div>
                 </div>
-              </div>
-              </div>
-
+                </div>
               <!-- End of Project 2-->
-
               <!-- Project 3-->
               <div class="projects">
                 <div class="project-writing">
-                <div class="project-title">
-                  <h3> Little Bridges </h3>
-                  <span class="git-link-icon">
-                    <a 
-                    title="Github Link to Repo"
-                    href="https://github.com/Mr-Jason-ONeill/littlebirds">
-                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
-                        <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
-                        <path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+                  <div class="project-title">
+                    <h3> Hellobluebyrd</h3>
+                  </div>
+                  <div class="project-info">
+                    <p>
+                      With unwavering focus, Jason embarked on the task of replicating HelloBlueByrd's captivating landing page, immersing himself in the intricacies of responsive design.
+                    </p>
+                    <ul>
+                      <li>HTML</li>
+                      <li>CSS</li>
+                    </ul>
+                  </div>
+                  </div>
+  
+                  <div class="project-image-container">
+                    <div class="project-image-wrapper">
+                      <div class="image-container">
+                        <a class="photoswipe-image" 
+                        title="Desktop Landing Page For HelloBlueByrd"
+                        href="images\hellobluebyrd_password_desktop.png"
+                        data-pswp-width="1200" 
+                        data-pswp-height="600"
+                        target="_blank">
+                        <div class="screenshot-wrapper">
+                          <img class="screenshot" src="images\hellobluebyrd_password_desktop.png" alt="Screenshot of desktop landing page">
+                        </div>
                         </a>
-                  </span>
-                </div>
-                <div class="project-info">
-                  <p>
-                    Inspired by the captivating allure of Little Bridges' design, Jason committed himself to refining his Shopify and Liquid skills by recreating their entire website. From the homepage to the deepest corners of the site, he painstakingly reconstructed Little Bridges' charming aesthetic, ensuring each element was not only visually pleasing but also responsive across all devices. Drawing from their whimsical layout and vibrant color palette, he delved into the intricacies of CSS to emulate their unique style with precision and meticulous attention to detail. Through this project, he not only paid homage to Little Bridges' creative vision but also expanded his proficiency in CSS to craft cohesive and immersive web experiences that truly encapsulate the essence of their brand.
-                  <ul>
-                    <li>Shopify</li>
-                    <li>Liquid</li>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                  </ul>
-                </div>
-                </div>
+                      </div>
+                      <div class="image-container">
+                        <a class="photoswipe-mobile-image"
+                        title="Mobile Landing Page For HelloBlueByrd"
+                        href="images\hellobluebyrd_password(iPhone SE).png"
+                        data-pswp-width="1200" 
+                        data-pswp-height="600"
+                        target="_blank">
+                        <div class="screenshot-mobile-wrapper">
+                          <img class="screenshot-mobile" src="images\hellobluebyrd_password(iPhone SE).png" alt="Screenshot of mobile landing page">
+                        </div>
+                        </a>
+                      </div>
+                  </div>
 
-                <div class="project-image-container">
-                  <div class="project-image-wrapper">
-                    <div class="image-container">
-                      <a 
-                      title="Hero Section For Little Bridges"
-                      href="images\littlebirds_hero.png"
-                      data-pswp-width="1200" 
-                      data-pswp-height="600"
-                      target="_blank">
-                        <img class="screenshot" src="images\littlebirds_hero.png" alt="Screenshot of hero section">
-                      </a>
-                    </div>
-                    <div class="image-container">
-                      <a 
-                      title="Introduction To Little Bridges Section"
-                      href="images\littlebirds_introsection.png"
-                      data-pswp-width="1200" 
-                      data-pswp-height="600"
-                      target="_blank">
-                      <img class="screenshot" src="images\littlebirds_introsection.png" alt="Screenshot of section of Introduction of company">
-                      </a>
-                    </div>
-                    <div class="image-container">
-                      <a 
-                      title="Bulletpoint Section With Svg's For Little Bridges"
-                      href="images\littlebirds_plussection.png"
-                      data-pswp-width="1200" 
-                      data-pswp-height="600"
-                      target="_blank">
-                      <img class="screenshot" src="images\littlebirds_plussection.png" alt="Screenshot of bulletpoint section containing svg's as bulletpoints">
-                      </a>
-                    </div>
-                    <div class="image-container">
-                      <a 
-                      title="Testimonial Section For Little Bridges"
-                      href="images\littlebirds_testimonial.png"
-                      data-pswp-width="1200" 
-                      data-pswp-height="600"
-                      target="_blank">
-                      <img class="screenshot" src="images\littlebirds_testimonial.png" alt="Screenshot of testimonials section">
-                      </a>
-                    </div>
                 </div>
-              </div>
               </div>
               <!-- End of Project 3-->
               </div>
-            </div>
+             </section>
 
             <!-- End of Section 3 -->
 
@@ -362,71 +395,16 @@
                 </div>
               </footer>
 
-    </div>
-  </div>
+  </section>
+
   <!-- End of all Sections & Footer -->
-  <script src="js\main.js"></script>
-  <script type="module">
-    import PhotoSwipeLightbox from 'photoswipe/dist/photoswipe-lightbox.esm.js';
-    const lightbox = new PhotoSwipeLightbox({
-    gallery: '.image-container',
-    children: 'a',
-  pswpModule: () => import('photoswipe/dist/photoswipe.esm.js')
-});
-lightbox.init();
-
-  </script>
-
-  <script type="module">
-    import PhotoSwipeLightbox from '/photoswipe/photoswipe-lightbox.esm.js';
-    const options = {
-    gallery:'.image-container',
-    children:'a',
-
-    imageClickAction: 'next',
-    tapAction: 'next',
-  
-  pswpModule: () => import('/photoswipe/photoswipe.esm.js')
-};
-const lightbox = new PhotoSwipeLightbox(options);
-
-lightbox.init();  
-
-  </script>
-
-  <script type="module">
-    import PhotoSwipeLightbox from '/photoswipe/photoswipe-lightbox.esm.js';
-
-const backEasing = {
-  in: 'cubic-bezier(0.6, -0.28, 0.7, 1)',
-  out: 'cubic-bezier(0.3, 0, 0.32, 1.275)',
-  inOut: 'cubic-bezier(0.68, -0.55, 0.265, 1.55)'
-};
-
-const lightbox = new PhotoSwipeLightbox({
-  gallery:'#gallery--customized-transition',
-  children:'a',
-
-  showHideAnimationType: 'zoom',
-  showAnimationDuration: 1000,
-  hideAnimationDuration: 1000,
-
-  pswpModule: () => import('/photoswipe/photoswipe.esm.js')
-});
-lightbox.on('firstUpdate', () => {
-  lightbox.pswp.options.easing = backEasing.out;
-});
-lightbox.on('initialZoomInEnd', () => {
-  lightbox.pswp.options.easing = backEasing.inOut;
-});
-lightbox.on('close', () => {
-  lightbox.pswp.options.easing = backEasing.in;
-});
-lightbox.init();
-
-  </script>
-  
-
+  <script src="./js/main.js"></script>
+<script src="./js/photoswipe-simplify.js" charset="utf-8"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe.min.js" charset="utf-8"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe-ui-default.min.js" charset="utf-8"></script>
+<script charset="utf-8">
+  photoswipeSimplify.init();
+</script>
 
 </body>
 </html>
