@@ -28,6 +28,7 @@ svg {
 
 .down-arrow-container {
 width: 100%;
+z-index: -5;
 }
 
 .down-arrow {
@@ -329,7 +330,6 @@ opacity: 0.7;
 /* ---- Projects ---- */
 .projects {
   padding-left: 1.18rem;
-  padding-right: 5.6rem;
   margin-right: auto;
   position: relative;
   width: 100%;
