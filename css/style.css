@@ -27,13 +27,19 @@ svg {
 }
 
 .down-arrow-container {
+position: relative;
 width: 100%;
 z-index: -5;
 }
 
+.down-arrow-wrapper {
+  position: sticky;
+}
+
+
 .down-arrow {
 margin-left: 4rem;
-top: 10%;
+top: 80%;
 transition: ease 0.3s;
 color: #fff;
 width: 20px;
