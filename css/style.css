@@ -32,10 +32,6 @@ width: 100%;
 z-index: -5;
 }
 
-.down-arrow-wrapper {
-  position: sticky;
-}
-
 
 .down-arrow {
 margin-left: 4rem;
@@ -409,7 +405,6 @@ opacity: 0.7;
 
 .project-image-container {
   flex: 1;
-  margin-right: 5.6rem;
 }
 
 .project-image-wrapper {
