@@ -1,4 +1,8 @@
 /* ---- HTML  ---- */
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: 'Sofia Sans Condensed', sans-serif;
   color: #fff;
@@ -22,20 +26,20 @@ svg {
 
 @media screen and (min-width: 250px) and (max-width: 900px) {
   .down-arrow {
-    visibility: hidden;
+    display: none;
     }  
 }
 
 .down-arrow-container {
 position: relative;
 width: 100%;
-z-index: -5;
 }
 
 
 .down-arrow {
 margin-left: 4rem;
-top: 80%;
+top: calc(100% - 2rem);
+transform: translateY(-100%);
 transition: ease 0.3s;
 color: #fff;
 width: 20px;
@@ -58,6 +62,13 @@ transform: rotate(180deg);
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+@media screen and (min-width: 250px) and (max-width: 900px) {
+  .light-dark-container {
+    padding-top: 1rem;
+  }
+
 }
 
 .light-dark-title {
@@ -284,7 +295,8 @@ opacity: 0.7;
 
 .about-me {
   font-family: 'Inter', sans-serif;
-  padding-top: 3.7rem;
+  padding-left: 1.18rem;
+  padding-right: 1.18rem;
   max-width: 500px;
   line-height: 1.5rem;
   font-size: 1.25rem;
@@ -311,6 +323,7 @@ opacity: 0.7;
   max-width: 2160px;
   margin-left: auto;
   margin-right: auto;
+  padding: 0 1.18rem;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -344,6 +357,7 @@ opacity: 0.7;
 @media screen and (min-width: 250px) and (max-width: 900px) {
   .projects {
     padding-right: 0;
+    width: 100%;
     }
   }
 
@@ -419,7 +433,7 @@ opacity: 0.7;
   display: flex;
   width: 100%;
   padding-bottom: 100%;
-  height: auto;
+  height: 0;
   background-color: #373232;
   position: relative;
   align-items: flex-start;
@@ -431,7 +445,6 @@ opacity: 0.7;
 .screenshot-wrapper,
 .screenshot-mobile-wrapper {
   display: flex;
-  padding-left: 1rem;
   position: absolute;
   width: 100%;
   height: 100%;
@@ -542,12 +555,19 @@ opacity: 0.7;
 }
 
 .footer-wrapper {
+  width: 100%;
+  max-width: 2160px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 1.18rem;
   display: flex;
-  align-items: center;
-  justify-content: space-around;
-  flex-direction: row;
   flex-wrap: wrap;
+  flex-direction: row;
+  align-content: flex-start;
+  justify-content: center;
+  align-items: center;
 }
+
 
 @media screen and (min-width: 250px) and (max-width: 900px) {
 .footer-wrapper {
