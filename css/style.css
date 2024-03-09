@@ -223,7 +223,7 @@ margin: 0;
 }
 
 .quote-right {
-  padding-left: 1rem;
+  transform: translateX(10px);
   position: absolute;
 }
 
