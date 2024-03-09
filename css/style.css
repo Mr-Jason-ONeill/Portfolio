@@ -62,13 +62,7 @@ transform: rotate(180deg);
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-@media screen and (min-width: 250px) and (max-width: 900px) {
-  .light-dark-container {
-    padding-top: 1rem;
-  }
-
+  padding-top: 1rem;
 }
 
 .light-dark-title {
