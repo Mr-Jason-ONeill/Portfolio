@@ -564,8 +564,19 @@ opacity: 0.7;
   flex-wrap: wrap;
   flex-direction: row;
   align-content: center;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
+}
+
+.empty-space {
+    top: 0;
+    padding-left: 1.18rem;
+    padding-right: 5.2rem;
+    max-width: 450px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
 }
 
 
