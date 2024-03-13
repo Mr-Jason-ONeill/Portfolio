@@ -1,4 +1,8 @@
 /* ---- HTML  ---- */
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: 'Sofia Sans Condensed', sans-serif;
   color: #fff;
@@ -22,24 +26,24 @@ svg {
 
 @media screen and (min-width: 250px) and (max-width: 900px) {
   .down-arrow {
-    visibility: hidden;
+    display: none;
     }  
 }
 
 .down-arrow-container {
 position: relative;
 width: 100%;
-z-index: -5;
 }
 
 
 .down-arrow {
 margin-left: 4rem;
-top: 80%;
+top: calc(100% - 2rem);
+transform: translateY(-100%);
 transition: ease 0.3s;
 color: #fff;
-width: 20px;
-height: 20px;
+width: 4rem;
+height: 4rem;
 position: sticky;
 padding: 1rem;
 border-radius: 50%;
@@ -58,6 +62,7 @@ transform: rotate(180deg);
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-top: 1rem;
 }
 
 .light-dark-title {
@@ -218,7 +223,7 @@ margin: 0;
 }
 
 .quote-right {
-  padding-left: 1rem;
+  transform: translateX(10px);
   position: absolute;
 }
 
@@ -284,7 +289,8 @@ opacity: 0.7;
 
 .about-me {
   font-family: 'Inter', sans-serif;
-  padding-top: 3.7rem;
+  padding-left: 1.18rem;
+  padding-right: 1.18rem;
   max-width: 500px;
   line-height: 1.5rem;
   font-size: 1.25rem;
@@ -311,6 +317,7 @@ opacity: 0.7;
   max-width: 2160px;
   margin-left: auto;
   margin-right: auto;
+  padding: 0 1.18rem;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -344,6 +351,7 @@ opacity: 0.7;
 @media screen and (min-width: 250px) and (max-width: 900px) {
   .projects {
     padding-right: 0;
+    width: 100%;
     }
   }
 
@@ -419,7 +427,7 @@ opacity: 0.7;
   display: flex;
   width: 100%;
   padding-bottom: 100%;
-  height: auto;
+  height: 0;
   background-color: #373232;
   position: relative;
   align-items: flex-start;
@@ -431,7 +439,6 @@ opacity: 0.7;
 .screenshot-wrapper,
 .screenshot-mobile-wrapper {
   display: flex;
-  padding-left: 1rem;
   position: absolute;
   width: 100%;
   height: 100%;
@@ -459,7 +466,7 @@ opacity: 0.7;
 .screenshot-mobile {
   display: flex;
   position: absolute;
-  width: 90%;
+  width: calc(100% - 2rem);
   height: auto;
   border-radius: 10px;
   border: 1px solid black;
@@ -539,15 +546,33 @@ opacity: 0.7;
 .footer-container {
   padding-top: 4rem;
   padding-bottom: 2rem;
+  max-width: 2160px;
 }
 
 .footer-wrapper {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 1.18rem;
   display: flex;
-  align-items: center;
-  justify-content: space-around;
-  flex-direction: row;
   flex-wrap: wrap;
+  flex-direction: row;
+  align-content: center;
+  justify-content: space-around;
+  align-items: center;
 }
+
+.empty-space {
+    top: 0;
+    padding-left: 1.18rem;
+    padding-right: 5.2rem;
+    max-width: 450px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
 
 @media screen and (min-width: 250px) and (max-width: 900px) {
 .footer-wrapper {
