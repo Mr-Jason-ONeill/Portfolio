@@ -14,6 +14,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/default-skin/default-skin.min.css">
     <link rel="icon" type="image/x-icon" href="images\favicon.ico">
 
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+  />
+
 </head>
 <body>
   <!-- Sections-container is for all sections on page -->
@@ -42,9 +47,33 @@
             <p class="name"> Jason Anthony O'Neill</p>
           </div>
 
-          <div class="profile-title">
-            <h1 id="carousel-title">Shopify Theme Developer</h1>
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="profile-title">
+                  <h1 class="carousel-title">Shopify Theme Developer</h1>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="profile-title">
+                  <h1 class="carousel-title">Frontend Developer</h1>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="profile-title">
+                  <h1 class="carousel-title">Web Developer</h1>
+                </div>
+              </div>
+            </div>
+            <!-- Navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+            <!-- Pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- Scrollbar -->
+            <div class="swiper-scrollbar"></div>
           </div>
+          
 
           <div class="profile-quote">
               <blockquote class="quote">
@@ -413,7 +442,9 @@
   </section>
 
   <!-- End of all Sections & Footer -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="./js/main.js"></script>
+  <script src="./js/swiper.js"></script>
 <script src="./js/photoswipe-simplify.js" charset="utf-8"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe.min.js" charset="utf-8"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe-ui-default.min.js" charset="utf-8"></script>

@@ -45,10 +45,10 @@ window.addEventListener('scroll', function() {
 }, false);
 
 
-// Vanilla JavaScript Carousel
+/*// Vanilla JavaScript Carousel
 document.addEventListener("DOMContentLoaded", function() {
   const titles = ["Shopify Theme Developer", "Web Developer", "Frontend Developer"];
-  const titleElement = document.getElementById("carousel-title");
+  const titleElement = document.getElementsByClassName("carousel-title");
   let currentIndex = 0;
 
   function rotateTitle() {
@@ -57,5 +57,5 @@ document.addEventListener("DOMContentLoaded", function() {
   }
 
   setInterval(rotateTitle, 4000);
-});
+}); */
 
