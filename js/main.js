@@ -45,7 +45,7 @@ window.addEventListener('scroll', function() {
 }, false);
 
 
-/*// Vanilla JavaScript Carousel
+/*// Vanilla JavaScript Carousel on loop option
 document.addEventListener("DOMContentLoaded", function() {
   const titles = ["Shopify Theme Developer", "Web Developer", "Frontend Developer"];
   const titleElement = document.getElementsByClassName("carousel-title");

@@ -197,12 +197,18 @@ text-transform: uppercase;
   }
 }
 
+.swiper {
+  width: 100%;
+}
+
 .swiper-button-prev,
 .swiper-button-next,
 .swiper-button-next::after,
 .swiper-button-prev::after {
   color: #FFF;
 }
+
+
 
 .profile-quote {
 font-family: 'Inter', sans-serif;
