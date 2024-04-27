@@ -25,6 +25,10 @@ svg {
 }
 
 @media screen and (min-width: 250px) and (max-width: 900px) {
+  body {
+    overflow-x: hidden;
+  }
+  
   .down-arrow {
     display: none;
     }  
