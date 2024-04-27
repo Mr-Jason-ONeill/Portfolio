@@ -3,6 +3,10 @@
   box-sizing: border-box;
 }
 
+html {
+  overflow-x: hidden;
+}
+
 body {
   font-family: 'Sofia Sans Condensed', sans-serif;
   color: #fff;
@@ -28,7 +32,7 @@ svg {
   body {
     overflow-x: hidden;
   }
-  
+
   .down-arrow {
     display: none;
     }  
@@ -210,6 +214,16 @@ text-transform: uppercase;
 .swiper-button-next::after,
 .swiper-button-prev::after {
   color: #FFF;
+}
+
+@media screen and (min-width: 250px) and (max-width: 484px) {
+.swiper-button-prev,
+.swiper-button-next,
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  visibility: hidden;
+}
+
 }
 
 
