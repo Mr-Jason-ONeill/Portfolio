@@ -4,7 +4,7 @@ const imageContainers = document.querySelectorAll('.image-container');
 const downArrow = document.querySelector('.down-arrow');
 const rootElement = document.documentElement;
 const leftArrow = document.querySelector('.swiper-button-prev.leftArrow');
-const rightArrow = document.querySelector('.swiper-button-prev rightArrow');
+const rightArrow = document.querySelector('.swiper-button-next.rightArrow');
 
 checkbox.addEventListener('change', function() {
     if (this.checked) {
