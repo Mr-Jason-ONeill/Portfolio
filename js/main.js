@@ -55,18 +55,3 @@ window.addEventListener('scroll', function() {
   lastScrollTop = scrollTop;
 }, false);
 
-
-/*// Vanilla JavaScript Carousel on loop option
-document.addEventListener("DOMContentLoaded", function() {
-  const titles = ["Shopify Theme Developer", "Web Developer", "Frontend Developer"];
-  const titleElement = document.getElementsByClassName("carousel-title");
-  let currentIndex = 0;
-
-  function rotateTitle() {
-    currentIndex = (currentIndex + 1) % titles.length;
-    titleElement.textContent = titles[currentIndex];
-  }
-
-  setInterval(rotateTitle, 4000);
-}); */
-
