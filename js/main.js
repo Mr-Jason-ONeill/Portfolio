@@ -2,9 +2,12 @@ const checkbox = document.getElementById('colorCheckbox');
 const svgs = document.querySelectorAll('svg');
 const imageContainers = document.querySelectorAll('.image-container');
 const downArrow = document.querySelector('.down-arrow');
+const rootElement = document.documentElement;
 
 checkbox.addEventListener('change', function() {
     if (this.checked) {
+      rootElement.style.setProperty('--swiper-pagination-color', 'rgb(17, 16, 16');
+      rootElement.style.setProperty('--swiper-pagination-bullet-inactive-color', '#373232');
         document.body.style.backgroundColor = '#fff';
         document.body.style.color = 'rgb(17, 16, 16)';
         svgs.forEach(svg => {
@@ -14,7 +17,9 @@ checkbox.addEventListener('change', function() {
             container.style.backgroundColor = 'rgb(194, 194, 194)';
         });
         downArrow.style.borderColor = 'rgb(17, 16, 16)';
+
     } else {
+      rootElement.style.setProperty('--swiper-pagination-color', '#fff');
         document.body.style.backgroundColor = 'rgb(17, 16, 16)';
         document.body.style.color = '#fff';
         svgs.forEach(svg => {
