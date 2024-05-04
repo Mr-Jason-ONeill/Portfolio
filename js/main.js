@@ -3,6 +3,8 @@ const svgs = document.querySelectorAll('svg');
 const imageContainers = document.querySelectorAll('.image-container');
 const downArrow = document.querySelector('.down-arrow');
 const rootElement = document.documentElement;
+const leftArrow = document.querySelector('.swiper-button-prev.leftArrow');
+const rightArrow = document.querySelector('.swiper-button-prev rightArrow');
 
 checkbox.addEventListener('change', function() {
     if (this.checked) {
@@ -17,6 +19,8 @@ checkbox.addEventListener('change', function() {
             container.style.backgroundColor = 'rgb(194, 194, 194)';
         });
         downArrow.style.borderColor = 'rgb(17, 16, 16)';
+        leftArrow.style.color = 'rgb(17, 16, 16)';
+        rightArrow.style.color = 'rgb(17, 16, 16)';
 
     } else {
       rootElement.style.setProperty('--swiper-pagination-color', '#fff');
@@ -29,6 +33,8 @@ checkbox.addEventListener('change', function() {
             container.style.backgroundColor = '#1d1d1d';
         });
         downArrow.style.borderColor = 'white';
+        leftArrow.style.color = '#fff';
+        rightArrow.style.color = '#fff';
     }
 });
 

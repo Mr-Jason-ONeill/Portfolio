@@ -176,6 +176,10 @@ font-weight: 750;
 text-transform: uppercase;
 }
 
+.carousel-title:hover {
+  cursor: grab;
+}
+
 
 @media screen and (min-width: 485px) and (max-width: 900px) {
   .profile-title h1 {
@@ -216,15 +220,9 @@ text-transform: uppercase;
   --swiper-navigation-color: #fff;
 }
 
-.swiper-button-prev,
-.swiper-button-next
-/*.swiper-button-next::after,
-.swiper-button-prev::after */ {
-  color: #FFF;
-}
-
-.leftArrow {
-  color: blue;
+.swiper-button-prev.leftArrow,
+.swiper-button-prev.rightArrow {
+  color: #fff;
 }
 
 .--swiper-pagination-color {
